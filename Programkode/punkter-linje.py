@@ -1,8 +1,9 @@
-# Ligger tre punkter på linje?
+
+# Ligger tre punkter på linje
 #
-# Lisens: Creative Commons BY-NC-SA fuzzbin (Tom Jarle Christiansen) 2017
+# Lisens: Creative Commons BY-SA fuzzbin (Tom Jarle Christiansen) 2017
 #
-# Program som leser inn tre punkter på formatet <x y> og avgjør om 
+# Program som leser inn tre punkter på formatet <x y> og avgjør om
 # disse ligger på en rett linje. Passer godt til matematikk R1
 
 # Importerer biblioteker som skal brukes
@@ -31,7 +32,6 @@ def main():
         print("Punktene {}, {} og {} ligger pa en rett linje".format(P1, P2, P3))
     else:
         print("Punktene {}, {} og {} ligger ikke pa en rett linje".format(P1, P2, P3))
-        
         # Skriver ut punktene i et koordinatsystem
         plt.plot([P1[0], P2[0], P3[0]], [P1[1], P2[1], P3[1]], 'bo')
         plt.ylabel('Y')
