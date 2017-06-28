@@ -1,3 +1,4 @@
+""" Gjett tallet """
 # Lisens: Creative Commons BY-SA bitjungle (Rune Mathisen) 2017
 #
 # Dette er et spill hvor du skal gjette på et tall mellom 1 og 20.
@@ -18,6 +19,8 @@
 import random # Her importerer vi en modul med funksjoner som vi skal bruke i programmet vårt.
 
 def main():
+    """ Hovedprogrammet main starter her """
+
     antall_forsok = 0 # Dette er en variabel hvor vi skal lagre det spilleren gjetter.
 
     print("Hei, hva heter du?")
