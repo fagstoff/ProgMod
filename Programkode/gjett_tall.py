@@ -1,4 +1,4 @@
-# Lisens: Creative Commons BY-NC-SA bitjungle (Rune Mathisen) 2017
+# Lisens: Creative Commons BY-SA bitjungle (Rune Mathisen) 2017
 #
 # Dette er et spill hvor du skal gjette på et tall mellom 1 og 20.
 # Spillet er basert på "GUESS THE NUMBER" i boka "Invent Your Own Computer Games With Python"
