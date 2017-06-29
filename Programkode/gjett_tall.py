@@ -21,7 +21,7 @@ import random # Her importerer vi en modul med funksjoner som vi skal bruke i pr
 def main():
     """ Hovedprogrammet main starter her """
 
-    antall_forsok = 0 # Dette er en variabel hvor vi skal lagre det spilleren gjetter.
+    antall_forsok = 0 # Dette er en variabel hvor vi lagrer antall ganger spilleren har gjettet.
 
     print("Hei, hva heter du?")
     spillernavn = input() # Vi henter spillerens navn, og lagrer det i en variabel.
