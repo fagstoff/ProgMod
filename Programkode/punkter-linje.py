@@ -35,10 +35,10 @@ def main():
     else:
         print("Punktene {}, {} og {} ligger ikke pa en rett linje".format(P1, P2, P3))
         # Skriver ut punktene i et koordinatsystem
-        plt.plot([P1[0], P2[0], P3[0]], [P1[1], P2[1], P3[1]], 'bo')
-        plt.ylabel('Y')
-        plt.xlabel('X')
-        plt.show()
+    plt.plot([P1[0], P2[0], P3[0]], [P1[1], P2[1], P3[1]], 'bo')
+    plt.ylabel('Y')
+    plt.xlabel('X')
+    plt.show()
 
 if __name__ == '__main__':
     # Programmet starter her. Vi kaller på funksjonen main().
