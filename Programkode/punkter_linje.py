@@ -1,5 +1,4 @@
-
-# Ligger tre punkter på linje
+""" Ligger tre punkter på linje """
 #
 # Lisens: Creative Commons BY-SA fuzzbin (Tom Jarle Christiansen) 2017
 #
@@ -16,8 +15,8 @@ P2 = list(map(int, input("Tast inn punkt 2 pa formen <x y>:").split()))
 P3 = list(map(int, input("Tast inn punkt 3 pa formen <x y>:").split()))
 
 def ligger_pa_linje(punkt1, punkt2, punkt3):
-    # Avgjør om punktene ligger på en rett linje. Returnerer True/False
-    # Lager to vektorer av punktene P1, P2 og P3
+    """ Avgjør om punktene ligger på en rett linje.
+    Returnerer True/False Lager to vektorer av punktene P1, P2 og P3 """
     v_1 = np.array(punkt3) - np.array(punkt1)
     v_2 = np.array(punkt2) - np.array(punkt1)
     print(v_1, v_2)
@@ -29,7 +28,7 @@ def ligger_pa_linje(punkt1, punkt2, punkt3):
 
 # Mainfunksjonen
 def main():
-    # Hovedfunksjonen - Skriver ut svar og plotter punktene
+    """ Hovedfunksjonen - Skriver ut svar og plotter punktene """
     if ligger_pa_linje(P1, P2, P3):
         print("Punktene {}, {} og {} ligger pa en rett linje".format(P1, P2, P3))
     else:
