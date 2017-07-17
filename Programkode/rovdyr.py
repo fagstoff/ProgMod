@@ -18,7 +18,7 @@ D = 0.75 #gamma
 # Definerer differensiallikningen
 def d_pop(X, t_0, a_0, b_0, c_0, d_0):
     """ Returnerer antall rev og kanin. X[0]=x og X[1]=y"""
-    return ([a_0*X_0[0] -   b_0*X[0]*X[1], -c_0*X[1] + d_0*b_0*X[0]*X[1]])
+    return ([a_0*X[0] -   b_0*X[0]*X[1], -c_0*X[1] + d_0*b_0*X[0]*X[1]])
 
 
 # Løser differensiallikningen
