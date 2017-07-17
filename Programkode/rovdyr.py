@@ -9,33 +9,25 @@ b = 0.1 #beta
 c = 1.5 #delta
 d = 0.75 #gamma
 
-# Pack up the parameters and initial conditions:
-p = [a, b, c, d]
-w0 = [5, 15]
+w0 = [5, 15] # initialbetingelser
 
-def dX_dt(X, t, p):
-    """ Return the growth rate of fox and rabbit populations. X[0]=x og X[1]=y"""
-    a, b, c, d = p
+# Definerer differensiallikningen
+def dX_dt(X, t, a, b, c, d):
+    """ Returnerer antall rev og kanin. X[0]=x og X[1]=y"""
     return ([ a*X[0] -   b*X[0]*X[1], -c*X[1] + d*b*X[0]*X[1] ])
 
-t = np.linspace(0,40,400) # x-verdier (Tidsaksen)
-# X0 = [10, 5]  # initialbetingelse v0 = 0 m/s
-X = odeint(dX_dt, w0, t, args=(p,)) # Løser difflikningen
-X = np.array(X).flatten() # Formaterer tallene i en array
 
-# print(X[2])
+# Løser differensiallikningen
+t = np.linspace(0,15,200) # x-verdier (Tidsaksen)
+w0 = [5, 15] # initialbetingelser 5 kaniner og 15 rev
+X = odeint(dX_dt, w0, t, args=(a, b, c, d)) # Løser difflikningen
 
-print(len(X))
-rev = []
-kanin = []
-for i in range(0,400,2):
-    rev.append(X[i])
-    kanin.append(X[i+1])
-
+# Utskrift
 plt.grid(True)
-plt.title("Populasjon som funksjon av tid", fontsize=16)
+plt.title("Populasjoner som funksjon av tid", fontsize=16)
 plt.xlabel('Tid',fontsize=12)
 plt.ylabel('Populasjon [antall individer]',fontsize=12)
-plt.plot(rev)
-plt.plot(kanin)
+plt.plot(t, X[:, 0], 'b', label='Rev')
+plt.plot(t, X[:, 1], 'g', label='Kanin')
+plt.legend(loc='best')
 plt.show()
