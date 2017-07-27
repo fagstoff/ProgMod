@@ -5,7 +5,6 @@ Oppgave
 -------
 Summer alle [Fibonaccitallene](https://no.wikipedia.org/wiki/Fibonaccitall) som har verdi mindre enn fire millioner, og er partall.
 
-
 Ressurser
 ---------
 * Du trenger en kodeeditor og Python denne oppgaven.
