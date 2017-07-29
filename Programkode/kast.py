@@ -10,9 +10,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Definerer initialbetingelser
-VX0 = 20
-VY0 = 25
-GRAV = 9.81
+VX0 = 20 # Startfart i x-retning
+VY0 = 25 # Startfart i y-retning
+GRAV = 9.81 # Gravitasjonskonstanten
 TID = np.linspace(0.0, 5.0, num=50) # 50 tidsmerker mellom 0.0 og 5.0
 
 # Definerer modeller for x- og y-posisjon
