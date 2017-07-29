@@ -1,21 +1,20 @@
-Partall-Fibonacci
-=================
+# Partall-Fibonacci
 
-Oppgave
--------
+## Oppgave
+
 Summer alle [Fibonaccitallene](https://no.wikipedia.org/wiki/Fibonaccitall) som har verdi mindre enn fire millioner, og er partall.
 
-Ressurser
----------
+## Ressurser
+
 * Du trenger en kodeeditor og Python denne oppgaven.
 
-Vurderingskriterier
--------------------
+## Vurderingskriterier
+
 * Siden skal validere uten feil og advarsler i konsollvinduet.
 * Det skal komme klart frem av forklaringen hvordan du har løst problemet.
 
-Kompetansemål
--------------
+## Kompetansemål
+
 * utvikle og sette sammen delprogrammer
 * lese og bruke dokumentasjon og kode
 * definere variabler og velge hensiktsmessige datatyper

@@ -1,21 +1,20 @@
-Fizz-Buzz
-=========
+# Fizz-Buzz
 
-Oppgave
--------
+## Oppgave
+
 Lag et program som skriver ut tallene fra 0 til 100 i konsollvinduet. Etter alle tall som er delelig med 3 skal det stå Fizz. Etter alle tall som er delelig med 5 skal det stå Buzz. Etter alle tall som er delelig med både 3 og 5 skal det stå FizzBuzz.
 
-Ressurser
----------
+## Ressurser
+
 * Du trenger en kodeeditor og python til denne oppgaven.
 
-Vurderingskriterier
--------------------
+## Vurderingskriterier
+
 * Siden skal validere uten feil og advarsler.
 * Det skal komme klart frem av forklaringen hvordan du har løst problemet.
 
-Kompetansemål
--------------
+## Kompetansemål
+
 * utvikle og sette sammen delprogrammer
 * lese og bruke dokumentasjon og kode
 * definere variabler og velge hensiktsmessige datatyper

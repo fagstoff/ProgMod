@@ -1,21 +1,20 @@
-Tidskonvertering
-================
+# Tidskonvertering
 
-Oppgave
--------
+## Oppgave
+
 Lag et program der en funksjon får antall sekunder som innparameter og returnerer antall timer, minutter og sekunder. Hvis innparameter er 3729 så skal funksjonen returnere: 3729 sekuner er det samme som 1 time(r) 2 minutt(er) og 9 sekund(er).
 
-Ressurser
----------
+## Ressurser
+
 * Du trenger en kodeeditor og Python denne oppgaven.
 
-Vurderingskriterier
--------------------
+## Vurderingskriterier
+
 * Siden skal validere uten feil og advarsler i konsollvinduet.
 * Det skal komme klart frem av forklaringen hvordan du har løst problemet.
 
-Kompetansemål
--------------
+## Kompetansemål
+
 * utvikle og sette sammen delprogrammer
 * lese og bruke dokumentasjon og kode
 * definere variabler og velge hensiktsmessige datatyper

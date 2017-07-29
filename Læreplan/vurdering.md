@@ -1,8 +1,8 @@
-# Vurdering 
+# Vurdering
 
 ## Programmering og modellering for realfag – programfag
 
-Bestemmelser for sluttvurdering: 
+Bestemmelser for sluttvurdering:
 
 ### Standpunktvurdering
 

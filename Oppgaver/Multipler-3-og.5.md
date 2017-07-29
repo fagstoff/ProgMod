@@ -1,24 +1,22 @@
-Multipler av 3 og 5
-===================
+# Multipler av 3 og 5
 
-Oppgave
--------
+## Oppgave
+
 Hvis vi ser på alle naturlige tall under 10 som er multipler av 3 eller 5, får vi 3, 5, 6 og 9. Summen av disse er 23.
 
 Finn summen av alle muktipler av 3 eller 5 unnder 1000.
 
+## Ressurser
 
-Ressurser
----------
 * Du trenger en kodeeditor og Python denne oppgaven.
 
-Vurderingskriterier
--------------------
+## Vurderingskriterier
+
 * Siden skal validere uten feil og advarsler i konsollvinduet.
 * Det skal komme klart frem av forklaringen hvordan du har løst problemet.
 
-Kompetansemål
--------------
+## Kompetansemål
+
 * utvikle og sette sammen delprogrammer
 * lese og bruke dokumentasjon og kode
 * definere variabler og velge hensiktsmessige datatyper

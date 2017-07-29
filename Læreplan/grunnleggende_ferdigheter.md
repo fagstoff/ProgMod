@@ -1,4 +1,5 @@
 # Grunnleggende ferdigheter
+
 Grunnleggende ferdigheter er integrert i kompetansemålene der de bidrar til utvikling av og er en del av fagkompetansen. I programmering og modellering forstås grunnleggende ferdigheter slik:
 
 *Å kunne uttrykke seg muntlig og skriftlig* i programmering og modellering innebærer å formulere koder, algoritmer og gjøre rede for tankegangen bak disse og sette ord på ideer og hypoteser. Det vil si å stille spørsmål, delta i samtaler og drøftinger av situasjoner og problemer i programmering og modellering og argumentere for egne løsningsmetoder. Det vil også si å dokumentere programmer på en hensiktsmessig måte.
