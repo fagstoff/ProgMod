@@ -4,25 +4,22 @@
 
 Hvis vi ser på alle naturlige tall under 10 som er multipler av 3 eller 5, får vi 3, 5, 6 og 9. Summen av disse er 23.
 
-Finn summen av alle muktipler av 3 eller 5 unnder 1000.
+Lag et program som finner summen av alle multipler av 3 eller 5 under 1000. Summen skal skrives ut i konsollvinduet.
 
 ## Ressurser
 
-* Du trenger en kodeeditor og Python denne oppgaven.
+* Du trenger en kodeeditor og Python til denne oppgaven.
 
 ## Vurderingskriterier
 
-* Siden skal validere uten feil og advarsler i konsollvinduet.
-* Det skal komme klart frem av forklaringen hvordan du har løst problemet.
+* Programmet skal kjøre uten feil og advarsler.
+* Det skal komme klart frem av programkode og kommentarer hvordan du har løst problemet.
 
 ## Kompetansemål
 
-* utvikle og sette sammen delprogrammer
-* lese og bruke dokumentasjon og kode
-* definere variabler og velge hensiktsmessige datatyper
-* tilordne uttrykk til variabler
-* programmere med enkle og indekserte variabler eller andre kolleksjoner av variabler
-* lage egne og bruke egne og andres funksjoner eller metoder med parametere
+* omgjøre problemstillinger til konkrete delproblemer, vurdere hvilke delproblemer som lar seg løse digitalt, og utforme løsninger for disse
+* bruke grunnleggende programmering som variabler, datatyper, løkker, tester, plotting, tilfeldige tall, funksjoner og enkel brukerinteraksjon
+* lage strukturerte og oversiktlige programmer med hensiktsmessige kommentarer
 
 ---
 _Denne oppgaven er tilpasset til norsk av [fuzzbin](https://github.com/fuzzbin), og er hentet fra [oppgave 1 på projecteuler.net](https://projecteuler.net/problem=1). Oppgaven er lisensiert under en [Creative Commons Navngivelse-DelPåSammeVilkår 4.0 Internasjonal lisens.
