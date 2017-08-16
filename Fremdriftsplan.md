@@ -9,7 +9,7 @@
 | 39 | [Biblioteker og metoder](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/biblioteker%20og%20metoder.ipynb) ||
 | 40 | [Funksjoner](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/funksjoner.ipynb) ||
 | 41 | [Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb) ||
-| 42 | Høstferie ||
+| 42 | Høstferie | |
 | 43 |||
 | 44 |||
 | 45 |||
