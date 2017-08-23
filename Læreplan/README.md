@@ -1,0 +1,1 @@
+I denne mappa finner du læreplanen for faget **Programmering og modellering** (REA3034).
