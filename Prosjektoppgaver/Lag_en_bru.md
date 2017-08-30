@@ -1,8 +1,12 @@
-# Lag en bru
+# Lag en bru - del
+
+**Hensikten med denne oppgaven er å lære om hvordan man skal tolke og følge vurderingskriterier**
 
 ## Oppgave
 
-I denne oppgaven skal dere jobbe i grupper, og bygge en bru med avispapir og tape.
+I denne oppgaven skal det jobbes i grupper. Dere skal bygge en bru med avispapir og tape.
+
+Dere har **en time** til å bygge broen.
 
 ## Ressurser
 
