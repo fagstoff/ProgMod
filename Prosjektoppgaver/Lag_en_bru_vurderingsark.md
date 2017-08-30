@@ -4,7 +4,15 @@
 
 **Navn på den/de som vurderes:**
 
-## Vurderingsskjema
+### Krav til brua:
+
+1. Den skal være 30 cm høy.
+2. Den skal være 100 cm lang.
+3. Den skal kunne stå alene.
+4. Den skal kunne bære en bok.
+
+
+## Vurderingsskjema:
 
 |Karakter 2|Karakter 3-4|Karakter 5-6|
 :---------:|:----------:|:----------:|
