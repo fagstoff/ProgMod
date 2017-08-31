@@ -1,4 +1,4 @@
-# Lag en bru - del
+# Lag en bru
 
 **Hensikten med denne oppgaven er å lære om hvordan man skal tolke og følge vurderingskriterier**
 
