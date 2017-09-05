@@ -23,4 +23,4 @@ Lag et program som finner summen av alle multipler av 3 eller 5 under 1000. Summ
 
 ---
 _Denne oppgaven er tilpasset til norsk av [fuzzbin](https://github.com/fuzzbin), og er hentet fra [oppgave 1 på projecteuler.net](https://projecteuler.net/problem=1). Oppgaven har lisensen [Attribution-NonCommercial-ShareAlike 2.0
-](http://creativecommons.org/licenses/by-nc-sa/2.0/uk/).
+](http://creativecommons.org/licenses/by-nc-sa/2.0/uk/)_.
