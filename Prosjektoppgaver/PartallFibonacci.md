@@ -23,5 +23,5 @@ Summer alle [Fibonaccitallene](https://no.wikipedia.org/wiki/Fibonaccitall) som 
 * lage egne og bruke egne og andres funksjoner eller metoder med parametere
 
 ---
-_Denne oppgaven er tilpasset til norsk av [fuzzbin](https://github.com/fuzzbin), og er hentet fra [oppgave 1 på projecteuler.net](https://projecteuler.net/problem=1). Oppgaven er lisensiert under en [Creative Commons Navngivelse-DelPåSammeVilkår 4.0 Internasjonal lisens.
-](http://creativecommons.org/licenses/by-sa/4.0/)_
+_Denne oppgaven er tilpasset til norsk av [fuzzbin](https://github.com/fuzzbin), og er hentet fra [oppgave 1 på projecteuler.net](https://projecteuler.net/problem=1). Oppgaven har lisensen [Attribution-NonCommercial-ShareAlike 2.0
+](http://creativecommons.org/licenses/by-nc-sa/2.0/uk/)_.
