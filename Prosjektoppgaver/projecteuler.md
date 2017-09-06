@@ -2,7 +2,7 @@
 
 [Project Euler](https://projecteuler.net/) er et nettsted med oppgaver ment for å løses med dataprogrammer.
 
-Så... Har du gått tom for oppgaver? Trenger du ekstra utfordringer? Registrer deg og prøv å løse oppgavene på [Project Euler](https://projecteuler.net/) med Python. 
+Så... Har du gått tom for oppgaver? Trenger du ekstra utfordringer? Registrer deg og prøv å løse oppgavene på [Project Euler](https://projecteuler.net/) med Python.
 
 Lykke til! ...du kommer til å trenge det.
 
