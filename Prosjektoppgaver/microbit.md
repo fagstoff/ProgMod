@@ -10,6 +10,7 @@ I denne oppgaven skal det jobbes i grupper. Hver gruppe får utdelt en micro:bit
 
 * [BBC micro:bit](http://microbit.org/no/)
 * kodeeditoren [mu](https://codewith.mu/)
+* [Instruksjoner og oppgaver](http://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html)
 
 ## Vurderingskriterier
 

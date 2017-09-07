@@ -8,5 +8,5 @@ Denne fagdagen avholdes tidlig i skoleåret, du får nærmere beskjed fra lærer
 * **10:30-11:30** - Arbeid med grunnleggende programmering (teori og oppgaver)
 * **11:30-12:00** - Lunsj
 * **12:00-13:00** - Arbeid med grunnleggende programmering (teori og oppgaver)
-* **13:00-14:00** - Vi tester [micro:bit](http://microbit.org/no/)
+* **13:00-14:00** - Vi tester [micro:bit](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/microbit.md)
 * **14:00-14:30** - Introduksjon av oppgaven ["Lag et spill"](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Lag_et_spill.md)
