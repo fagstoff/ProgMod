@@ -19,7 +19,7 @@ Ingen andre materialer er tillatt i selve brukonstruksjonen.
 
 Brua skal ...
 * ... brudekket skal være 1 meter lang
-* ... være 30 cm høy, og slik at et objekt som er 25 cm høy og 10 cm bred kan passere under 
+* ... være 30 cm høy 
 * ... kunne stå alene, uten å velte
 * ... kunne bære en bok (læreren deler ut boka som skal brukes)
 
