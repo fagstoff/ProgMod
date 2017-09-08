@@ -6,17 +6,19 @@
 
 I denne oppgaven skal det jobbes i grupper. Dere skal bygge en bru med avispapir og tape.
 
-Dere har **en time** til å bygge broen.
+Dere har **en time** til å bygge brua.
 
 ## Ressurser
 
 * Avispapir
 * Tape
 
+Ingen andre materialer er tillatt i selve brukonstruksjonen.
+
 ## Vurderingskriterier
 
 Brua skal ...
-* ... være 1 meter lang
+* ... brudekket skal være 1 meter lang
 * ... være 30 cm høy
 * ... kunne stå alene, uten å velte
 * ... kunne bære en bok (læreren deler ut boka som skal brukes)
