@@ -1,10 +1,9 @@
 
-'''
-Utregning av nullpunkter i et andregradspolynom.
-Lisens: Creative Commons BY-NC-SA fuzzbin (Tom Jarle Christiansen) 2017
-'''
+''' Utregning av nullpunkter i et andregradspolynom. '''
 
-
+# Programmet regner ut nullpunmkter i et andregradspolynom.
+# Tast inn polynomfaktorene A, B og C.
+# Lisens: Creative Commons BY-NC-SA fuzzbin (Tom Jarle Christiansen) 2017
 
 import math # Henter inn matematikkbiblioteket
 
