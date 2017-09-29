@@ -14,7 +14,7 @@ Lag et enkelt spill som kjører i et konsollvindu.
 * Spillet skal kjøres i et konsollvindu.
 * Spillet skal bruke `print()` og `input()` for kommunikasjon med spilleren.
 * Programkoden skal inneholde bruk av kontrollstrukturene `ìf`, `for` og `while`.
-* Programkoden skal inneholde minst en egendefinert funksjon.
+* Programkoden skal inneholde minst en egendefinert funksjon med inn-parametre og returverdi.
 * Spillet skal kommunisere med brukeren på norsk.
 * Spilleren skal ha mulighet for å starte et nytt spill når det pågående spillet er ferdig ("Spille igjen (J/N)?")
 * For at programmet ditt skal kvalifisere som et spill, må utfallet være ukjent når programmet starter. Det må være slik at spilleren har mulighet til å påvirke utfallet.
