@@ -5,10 +5,6 @@ Denne pygame-demoen er basert på http://pygame.org/docs/tut/PygameIntro.html
 import sys
 import pygame
 
-def calc_move_offset():
-    '''Funksjon som skal beregne en ny offset for bevegelse av objektet som animeres'''
-    pass 
-
 def main():
     '''Hoved-loopen i programmet'''
 
