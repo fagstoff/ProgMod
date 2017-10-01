@@ -4,7 +4,6 @@ Lisens: Creative Commons BY-SA bitjungle
 Denne pygame-demoen er basert på http://pygame.org/docs/tut/PygameIntro.html 
 TODO:
 * Implementere styring av spillere med tastatur
-* Kollisjonsdeteksjon med spiller og ball
 * Registrere mål
 * Telle og vise antall mål
 * Objektorientere (v3)
@@ -61,8 +60,15 @@ def main():
 
         text = font.render("(top,left)=({},{})".format(ballrect.top, ballrect.left), True, PALE_GREEN)
 
+        if ballrect.colliderect(player1rect):
+            player_kick = True
+        elif ballrect.colliderect(player2rect):
+            player_kick = True
+        else:
+            player_kick = False
+
         ballrect = ballrect.move(ball_offset)
-        if ballrect.left < FIELD_PADDING or ballrect.right > fieldrect.width - FIELD_PADDING:
+        if ballrect.left < FIELD_PADDING or ballrect.right > fieldrect.width - FIELD_PADDING or player_kick:
             ball_offset[0] = -ball_offset[0]
         if ballrect.top < 0 or ballrect.bottom > fieldrect.height:
             ball_offset[1] = -ball_offset[1]
