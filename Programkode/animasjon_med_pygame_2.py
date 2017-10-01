@@ -3,14 +3,17 @@ Fotballpong v2
 Lisens: Creative Commons BY-SA bitjungle
 Denne pygame-demoen er basert på http://pygame.org/docs/tut/PygameIntro.html 
 TODO:
-* Lage klasse for spillerne
-* Implementere styring med tastatur
+* Implementere styring av spillere med tastatur
 * Kollisjonsdeteksjon med spiller og ball
 * Registrere mål
 * Telle og vise antall mål
+* Objektorientere (v3)
 '''
 import sys
 import pygame
+
+def ball_collision_detect():
+    pass
 
 def main():
     '''Hoved-loopen i programmet'''
@@ -27,7 +30,11 @@ def main():
     player1rect = player1.get_rect()
     player2rect = player2.get_rect()
 
-    offset = [5, 5]
+    ball_offset = [5, 5]
+    player1_offset = [0, 2]
+    player2_offset = [0, 2]
+
+    FIELD_PADDING = 50
 
     screen = pygame.display.set_mode(fieldrect.size)
     caption = pygame.display.set_caption("Fotballpong v2")
@@ -37,22 +44,41 @@ def main():
     TEXT_POS_TOP = 20
     TEXT_POS_LEFT = fieldrect.width // 8
 
+    # Set initial player positions
+    player1rect.top = (fieldrect.height // 2) - (player1rect.height // 2)
+    player2rect.top = (fieldrect.height // 2) - (player2rect.height // 2)
+    player1rect.left = (fieldrect.width // 2) - (fieldrect.width // 4) - player1rect.width
+    player2rect.left = (fieldrect.width // 2) + (fieldrect.width // 4)
+
+    # set initial ball position
+    ballrect.top = (fieldrect.height // 2) - (ballrect.height // 2)
+    ballrect.left = (fieldrect.width // 2) - (ballrect.width // 2)
+    
+
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
 
         text = font.render("(top,left)=({},{})".format(ballrect.top, ballrect.left), True, PALE_GREEN)
 
-        ballrect = ballrect.move(offset)
-        if ballrect.left < 0 or ballrect.right > fieldrect.width:
-            offset[0] = -offset[0]
+        ballrect = ballrect.move(ball_offset)
+        if ballrect.left < FIELD_PADDING or ballrect.right > fieldrect.width - FIELD_PADDING:
+            ball_offset[0] = -ball_offset[0]
         if ballrect.top < 0 or ballrect.bottom > fieldrect.height:
-            offset[1] = -offset[1]
+            ball_offset[1] = -ball_offset[1]
+        
+        player1rect = player1rect.move(player1_offset)
+        if player1rect.top < 0 or player1rect.bottom > fieldrect.height:
+            player1_offset[1] = -player1_offset[1]
+
+        player2rect = player2rect.move(player1_offset)
+        if player2rect.top < 0 or player2rect.bottom > fieldrect.height:
+            player2_offset[1] = -player2_offset[1]
 
         screen.blit(field, fieldrect)
         screen.blit(text,(TEXT_POS_LEFT, TEXT_POS_TOP))
-        screen.blit(player1, (200, 200))
-        screen.blit(player2, (600, 100))
+        screen.blit(player1, player1rect)
+        screen.blit(player2, player2rect)
         screen.blit(ball, ballrect)
         pygame.display.flip()
 
