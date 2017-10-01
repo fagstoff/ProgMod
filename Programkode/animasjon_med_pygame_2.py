@@ -41,7 +41,8 @@ def main():
     font = pygame.font.Font("SourceCodePro-Regular.ttf", 24)
     PALE_GREEN = (152,251,152)
     TEXT_POS_TOP = 20
-    TEXT_POS_LEFT = fieldrect.width // 8
+    TEXT1_POS_LEFT = fieldrect.width // 8
+    TEXT2_POS_LEFT = (fieldrect.width // 2) + (fieldrect.width // 8)
 
     # Set initial player positions
     player1rect.top = (fieldrect.height // 2) - (player1rect.height // 2)
@@ -58,7 +59,8 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
 
-        text = font.render("(top,left)=({},{})".format(ballrect.top, ballrect.left), True, PALE_GREEN)
+        text1 = font.render("Player 1: {}".format(0), True, PALE_GREEN)
+        text2 = font.render("Player 2: {}".format(0), True, PALE_GREEN)
 
         if ballrect.colliderect(player1rect):
             player_kick = True
@@ -82,7 +84,8 @@ def main():
             player2_offset[1] = -player2_offset[1]
 
         screen.blit(field, fieldrect)
-        screen.blit(text,(TEXT_POS_LEFT, TEXT_POS_TOP))
+        screen.blit(text1,(TEXT1_POS_LEFT, TEXT_POS_TOP))
+        screen.blit(text2,(TEXT2_POS_LEFT, TEXT_POS_TOP))
         screen.blit(player1, player1rect)
         screen.blit(player2, player2rect)
         screen.blit(ball, ballrect)
