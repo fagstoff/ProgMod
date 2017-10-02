@@ -1,28 +1,26 @@
 '''
-Fotballpong v2
+Fotballpong v3
 Lisens: Creative Commons BY-SA bitjungle
 Denne pygame-demoen er basert på http://pygame.org/docs/tut/PygameIntro.html 
-TODO:
+TODO versjon 3:
 * Implementere styring av spillere med tastatur
 * Registrere mål
 * Telle og vise antall mål
-* Objektorientere (v3)
+TODO versjon 4:
+* Objektorientere
 '''
 import sys
 import pygame
 
-def ball_collision_detect():
-    pass
-
 def main():
-    '''Hoved-loopen i programmet'''
-
+    '''Game main loop'''
     pygame.init()
 
-    field = pygame.image.load('animasjon_med_pygame_bane.png')
-    ball = pygame.image.load("animasjon_med_pygame_ball.png")
-    player1 = pygame.image.load("animasjon_med_pygame_spiller_v.png")
-    player2 = pygame.image.load("animasjon_med_pygame_spiller_h.png")
+    # Loading images
+    field = pygame.image.load('fotballpong_bane.png')
+    ball = pygame.image.load("fotballpong_ball.png")
+    player1 = pygame.image.load("fotballpong_spiller_v.png")
+    player2 = pygame.image.load("fotballpong_spiller_h.png")
 
     fieldrect = field.get_rect()
     ballrect = ball.get_rect()
@@ -31,13 +29,14 @@ def main():
 
     ball_offset = [5, 5]
     player1_offset = [0, 2]
-    player2_offset = [0, 2]
+    player2_offset = [0, -2]
 
-    FIELD_PADDING = 50
+    FIELD_PADDING = 50 # Ball will bounce 50 pixels from the edge of the field
 
     screen = pygame.display.set_mode(fieldrect.size)
-    caption = pygame.display.set_caption("Fotballpong v2")
+    caption = pygame.display.set_caption("Fotballpong v3")
 
+    # Preparing the scoreboard
     font = pygame.font.Font("SourceCodePro-Regular.ttf", 24)
     PALE_GREEN = (152,251,152)
     TEXT_POS_TOP = 20
@@ -62,6 +61,10 @@ def main():
         text1 = font.render("Player 1: {}".format(0), True, PALE_GREEN)
         text2 = font.render("Player 2: {}".format(0), True, PALE_GREEN)
 
+        # Moving the ball
+        ballrect = ballrect.move(ball_offset)
+
+        # Check if the ball collides with a player
         if ballrect.colliderect(player1rect):
             player_kick = True
         elif ballrect.colliderect(player2rect):
@@ -69,20 +72,23 @@ def main():
         else:
             player_kick = False
 
-        ballrect = ballrect.move(ball_offset)
+        # Check if the ball collides with an edge
         if ballrect.left < FIELD_PADDING or ballrect.right > fieldrect.width - FIELD_PADDING or player_kick:
             ball_offset[0] = -ball_offset[0]
         if ballrect.top < 0 or ballrect.bottom > fieldrect.height:
             ball_offset[1] = -ball_offset[1]
         
+        # Move player 1, check if he collides with an edge
         player1rect = player1rect.move(player1_offset)
         if player1rect.top < 0 or player1rect.bottom > fieldrect.height:
             player1_offset[1] = -player1_offset[1]
 
-        player2rect = player2rect.move(player1_offset)
+        # Move player 2, check if he collides with an edge
+        player2rect = player2rect.move(player2_offset)
         if player2rect.top < 0 or player2rect.bottom > fieldrect.height:
             player2_offset[1] = -player2_offset[1]
 
+        # Print images to screen
         screen.blit(field, fieldrect)
         screen.blit(text1,(TEXT1_POS_LEFT, TEXT_POS_TOP))
         screen.blit(text2,(TEXT2_POS_LEFT, TEXT_POS_TOP))
