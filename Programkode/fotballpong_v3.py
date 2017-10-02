@@ -16,7 +16,7 @@ def center_rect_on_rect(rect, target_rect):
     rect.left = (target_rect.width // 2) - (rect.width // 2)
 
 def flip_horiz(offset):
-    '''Flip the x value in a x/y pair (list)'''
+    '''Flip the x value in a [x, y] pair'''
     offset[0] = -offset[0]
 
 def flip_vert(offset):
@@ -59,8 +59,8 @@ def main():
     player2_offset = [0, -2]
 
      # Ball will bounce x pixels from the edge of the field
-    FIELD_PADDING_HORIZ = 50
-    FIELD_PADDING_VERT = 25
+    FIELD_PADDING_LEFTRIGHT = 50
+    FIELD_PADDING_TOPBOTTOM = 25
 
     screen = pygame.display.set_mode(fieldrect.size)
     caption = pygame.display.set_caption("Fotballpong v3")
@@ -109,9 +109,9 @@ def main():
             player1_score += 1
             flip_horiz(ball_offset)
             center_rect_on_rect(ballrect, fieldrect)
-        elif ballrect.left < FIELD_PADDING_HORIZ or ballrect.right > fieldrect.width - FIELD_PADDING_HORIZ: 
+        elif ballrect.left < FIELD_PADDING_LEFTRIGHT or ballrect.right > fieldrect.width - FIELD_PADDING_LEFTRIGHT: 
             flip_horiz(ball_offset)
-        elif ballrect.top - FIELD_PADDING_VERT < 0 or ballrect.bottom > fieldrect.height - FIELD_PADDING_VERT:
+        elif ballrect.top - FIELD_PADDING_TOPBOTTOM < 0 or ballrect.bottom > fieldrect.height - FIELD_PADDING_TOPBOTTOM:
             flip_vert(ball_offset)
         else:
             pass # Do nothing
