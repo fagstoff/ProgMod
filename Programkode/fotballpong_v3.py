@@ -12,9 +12,20 @@ TODO versjon 4:
 import sys
 import pygame
 
+def ball_start_position(ballrect, fieldrect):
+    '''Place ball on the middle of the field'''
+    ballrect.top = (fieldrect.height // 2) - (ballrect.height // 2)
+    ballrect.left = (fieldrect.width // 2) - (ballrect.width // 2)
+    return
+
+
 def main():
     '''Game main loop'''
     pygame.init()
+
+    # Color definitions
+    PALE_GREEN = (152,251,152)
+    LIGHT_GRAY = (211,211,211)
 
     # Loading images
     field = pygame.image.load('fotballpong_bane.png')
@@ -27,6 +38,17 @@ def main():
     player1rect = player1.get_rect()
     player2rect = player2.get_rect()
 
+    goal1 = pygame.Surface((25,100))
+    goal2 = pygame.Surface((25,100))
+    goal1rect = goal1.get_rect()
+    goal2rect = goal2.get_rect()
+    goal1rect.top = (fieldrect.height // 2) - (goal1rect.height // 2)
+    goal2rect.top = (fieldrect.height // 2) - (goal2rect.height // 2)
+    goal1rect.left = 25
+    goal2rect.left = fieldrect.width - 50
+    goal1.fill(LIGHT_GRAY)
+    goal2.fill(LIGHT_GRAY)
+
     # Initial speed of ball and players in x and y direction
     ball_offset = [5, 5]
     player1_offset = [0, 2]
@@ -38,10 +60,11 @@ def main():
 
     screen = pygame.display.set_mode(fieldrect.size)
     caption = pygame.display.set_caption("Fotballpong v3")
+    clock = pygame.time.Clock()
+    FPS = 50 # Limit frames per second
 
     # Preparing the scoreboard
     font = pygame.font.Font("SourceCodePro-Regular.ttf", 24)
-    PALE_GREEN = (152,251,152)
     TEXT_POS_TOP = 20
     TEXT1_POS_LEFT = fieldrect.width // 8
     TEXT2_POS_LEFT = (fieldrect.width // 2) + (fieldrect.width // 8)
@@ -52,26 +75,36 @@ def main():
     player1rect.left = (fieldrect.width // 2) - (fieldrect.width // 4) - player1rect.width
     player2rect.left = (fieldrect.width // 2) + (fieldrect.width // 4)
 
-    # set initial ball position
-    ballrect.top = (fieldrect.height // 2) - (ballrect.height // 2)
-    ballrect.left = (fieldrect.width // 2) - (ballrect.width // 2)
-    
+    # Set initial ball position
+    ball_start_position(ballrect, fieldrect)
+
+    # Set initial score
+    player1_score = 0
+    player2_score = 0
 
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
 
-        text1 = font.render("Player 1: {}".format(0), True, PALE_GREEN)
-        text2 = font.render("Player 2: {}".format(0), True, PALE_GREEN)
+        text1 = font.render("Player 1: {}".format(player1_score), True, PALE_GREEN)
+        text2 = font.render("Player 2: {}".format(player2_score), True, PALE_GREEN)
 
         # Moving the ball
         ballrect = ballrect.move(ball_offset)
 
-        # Check if the ball collides with a player or field edge
+        # Check if the ball collides with a player or goal or field edge
         if ballrect.colliderect(player1rect):
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
         elif ballrect.colliderect(player2rect):
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
+        elif ballrect.colliderect(goal1rect):
+            print('GOAL! PLAYER 2 SCORES!')
+            player2_score += 1
+            ball_start_position(ballrect, fieldrect)
+        elif ballrect.colliderect(goal2rect):
+            print('GOAL! PLAYER 1 SCORES!')
+            player1_score += 1
+            ball_start_position(ballrect, fieldrect)
         elif ballrect.left < FIELD_PADDING_HORIZ or ballrect.right > fieldrect.width - FIELD_PADDING_HORIZ: 
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
         elif ballrect.top - FIELD_PADDING_VERT < 0 or ballrect.bottom > fieldrect.height - FIELD_PADDING_VERT:
@@ -96,7 +129,11 @@ def main():
         screen.blit(player1, player1rect)
         screen.blit(player2, player2rect)
         screen.blit(ball, ballrect)
+        screen.blit(goal1, goal1rect)
+        screen.blit(goal2, goal2rect)
         pygame.display.flip()
+
+        clock.tick(FPS)
 
 if __name__ == '__main__':
     main()
