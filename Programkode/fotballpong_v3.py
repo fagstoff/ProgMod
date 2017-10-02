@@ -98,12 +98,12 @@ def main():
         elif ballrect.colliderect(player2rect):
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
         elif ballrect.colliderect(goal1rect):
-            print('GOAL! PLAYER 2 SCORES!')
             player2_score += 1
+            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
             ball_start_position(ballrect, fieldrect)
         elif ballrect.colliderect(goal2rect):
-            print('GOAL! PLAYER 1 SCORES!')
             player1_score += 1
+            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
             ball_start_position(ballrect, fieldrect)
         elif ballrect.left < FIELD_PADDING_HORIZ or ballrect.right > fieldrect.width - FIELD_PADDING_HORIZ: 
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
