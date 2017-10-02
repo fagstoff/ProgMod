@@ -21,11 +21,14 @@ def main():
     player1rect = player1.get_rect()
     player2rect = player2.get_rect()
 
+    # Initial speed of ball and players in x and y direction
     ball_offset = [5, 5]
     player1_offset = [0, 2]
     player2_offset = [0, -2]
 
-    FIELD_PADDING = 50 # Ball will bounce 50 pixels from the edge of the field
+     # Ball will bounce x pixels from the edge of the field
+    FIELD_PADDING_HORIZ = 50
+    FIELD_PADDING_VERT = 25
 
     screen = pygame.display.set_mode(fieldrect.size)
     caption = pygame.display.set_caption("Fotballpong v2")
@@ -53,9 +56,9 @@ def main():
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
         elif ballrect.colliderect(player2rect):
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
-        elif ballrect.left < FIELD_PADDING or ballrect.right > fieldrect.width - FIELD_PADDING: 
+        elif ballrect.left < FIELD_PADDING_HORIZ or ballrect.right > fieldrect.width - FIELD_PADDING_HORIZ: 
             ball_offset[0] = -ball_offset[0] # Flip horizontal direction
-        elif ballrect.top < 0 or ballrect.bottom > fieldrect.height:
+        elif ballrect.top - FIELD_PADDING_VERT < 0 or ballrect.bottom > fieldrect.height - FIELD_PADDING_VERT:
             ball_offset[1] = -ball_offset[1] # Flip vertical direction
         else:
             pass # Do nothing
