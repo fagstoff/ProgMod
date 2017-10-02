@@ -1,23 +1,27 @@
 '''
 Fotballpong v3
 Lisens: Creative Commons BY-SA bitjungle
-Denne pygame-demoen er basert på http://pygame.org/docs/tut/PygameIntro.html 
 TODO versjon 3:
 * Implementere styring av spillere med tastatur
-* Registrere mål
-* Telle og vise antall mål
+* Flytte kode ut fra main()
 TODO versjon 4:
 * Objektorientere
 '''
 import sys
 import pygame
 
-def ball_start_position(ballrect, fieldrect):
-    '''Place ball on the middle of the field'''
-    ballrect.top = (fieldrect.height // 2) - (ballrect.height // 2)
-    ballrect.left = (fieldrect.width // 2) - (ballrect.width // 2)
-    return
+def center_rect_on_rect(rect, target_rect):
+    '''Center a rect in the middle of a target rect'''
+    rect.top = (target_rect.height // 2) - (rect.height // 2)
+    rect.left = (target_rect.width // 2) - (rect.width // 2)
 
+def flip_horiz(offset):
+    '''Flip the x value in a x/y pair (list)'''
+    offset[0] = -offset[0]
+
+def flip_vert(offset):
+    '''Flip the y value in a [x, y] pair'''
+    offset[1] = -offset[1]
 
 def main():
     '''Game main loop'''
@@ -76,7 +80,7 @@ def main():
     player2rect.left = (fieldrect.width // 2) + (fieldrect.width // 4)
 
     # Set initial ball position
-    ball_start_position(ballrect, fieldrect)
+    center_rect_on_rect(ballrect, fieldrect)
 
     # Set initial score
     player1_score = 0
@@ -94,33 +98,33 @@ def main():
 
         # Check if the ball collides with a player or goal or field edge
         if ballrect.colliderect(player1rect):
-            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
+            flip_horiz(ball_offset)
         elif ballrect.colliderect(player2rect):
-            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
+            flip_horiz(ball_offset)
         elif ballrect.colliderect(goal1rect):
             player2_score += 1
-            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
-            ball_start_position(ballrect, fieldrect)
+            flip_horiz(ball_offset)
+            center_rect_on_rect(ballrect, fieldrect)
         elif ballrect.colliderect(goal2rect):
             player1_score += 1
-            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
-            ball_start_position(ballrect, fieldrect)
+            flip_horiz(ball_offset)
+            center_rect_on_rect(ballrect, fieldrect)
         elif ballrect.left < FIELD_PADDING_HORIZ or ballrect.right > fieldrect.width - FIELD_PADDING_HORIZ: 
-            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
+            flip_horiz(ball_offset)
         elif ballrect.top - FIELD_PADDING_VERT < 0 or ballrect.bottom > fieldrect.height - FIELD_PADDING_VERT:
-            ball_offset[1] = -ball_offset[1] # Flip vertical direction
+            flip_vert(ball_offset)
         else:
             pass # Do nothing
         
         # Move player 1, check if he collides with an edge
         player1rect = player1rect.move(player1_offset)
         if player1rect.top < 0 or player1rect.bottom > fieldrect.height:
-            player1_offset[1] = -player1_offset[1]
+            flip_vert(player1_offset)
 
         # Move player 2, check if he collides with an edge
         player2rect = player2rect.move(player2_offset)
         if player2rect.top < 0 or player2rect.bottom > fieldrect.height:
-            player2_offset[1] = -player2_offset[1]
+            flip_vert(player2_offset)
 
         # Print images to screen
         screen.blit(field, fieldrect)
