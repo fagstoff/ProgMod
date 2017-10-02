@@ -48,20 +48,18 @@ def main():
         # Moving the ball
         ballrect = ballrect.move(ball_offset)
 
-        # Check if the ball collides with a player
+        # Check if the ball collides with a player or field edge
         if ballrect.colliderect(player1rect):
-            player_kick = True
+            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
         elif ballrect.colliderect(player2rect):
-            player_kick = True
+            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
+        elif ballrect.left < FIELD_PADDING or ballrect.right > fieldrect.width - FIELD_PADDING: 
+            ball_offset[0] = -ball_offset[0] # Flip horizontal direction
+        elif ballrect.top < 0 or ballrect.bottom > fieldrect.height:
+            ball_offset[1] = -ball_offset[1] # Flip vertical direction
         else:
-            player_kick = False
+            pass # Do nothing
 
-        # Check if the ball collides with an edge
-        if ballrect.left < FIELD_PADDING or ballrect.right > fieldrect.width - FIELD_PADDING or player_kick:
-            ball_offset[0] = -ball_offset[0]
-        if ballrect.top < 0 or ballrect.bottom > fieldrect.height:
-            ball_offset[1] = -ball_offset[1]
-        
         # Move player 1, check if he collides with an edge
         player1rect = player1rect.move(player1_offset)
         if player1rect.top < 0 or player1rect.bottom > fieldrect.height:
