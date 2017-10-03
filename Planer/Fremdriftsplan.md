@@ -8,15 +8,15 @@
 | 37 | [Kontrollstrukturer](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/kontrollstrukturer.ipynb) ||
 | 38 | [Biblioteker og metoder](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/biblioteker%20og%20metoder.ipynb) ||
 | 39 | [Funksjoner](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/funksjoner.ipynb) ||
-| 40 | [Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb) ||
+| 40 | [Kodekommentarer](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/kodekommentarer.ipynb)||
 | 41 | Høstferie ||
-| 44 |||
-| 43 |||
-| 44 |||
-| 45 |||
-| 46 |||
-| 47 |||
-| 48 |||
+| 45 |[Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb)||
+| 43 |Fortsett med å lage spill||
+| 44 |[Enkel graf](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkel-graf.ipynb)||
+| 45 |[Tre punkter på linje](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tre_punkter_pa_linje.ipynb)||
+| 46 |[Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
+| 47 |[Animasjoner med pygame](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjoner_med_pygame.ipynb)||
+| 48 |[Animasjon av modeller](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_modeller.ipynb)||
 | 49 |||
 | 50 |||
 | 51 |||
