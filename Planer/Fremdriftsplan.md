@@ -10,7 +10,7 @@
 | 39 | [Funksjoner](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/funksjoner.ipynb) ||
 | 40 | [Kodekommentarer](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/kodekommentarer.ipynb)||
 | 41 | Høstferie ||
-| 45 |[Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb)||
+| 42 |[Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb)||
 | 43 |Fortsett med å lage spill||
 | 44 |[Enkel graf](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkel-graf.ipynb)||
 | 45 |[Tre punkter på linje](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tre_punkter_pa_linje.ipynb)||
