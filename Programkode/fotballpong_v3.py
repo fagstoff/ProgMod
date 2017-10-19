@@ -6,6 +6,7 @@ TODO versjon 3:
 * Flytte kode ut fra main()
 TODO versjon 4:
 * Objektorientere
+* Lydeffekter
 '''
 import sys
 import pygame
@@ -55,8 +56,8 @@ def main():
 
     # Initial speed of ball and players in x and y direction
     ball_offset = [5, 5]
-    player1_offset = [0, 2]
-    player2_offset = [0, -2]
+    player1_vertical_offset = 0
+    player2_vertical_offset = 0
 
      # Ball will bounce x pixels from the edge of the field
     FIELD_PADDING_LEFTRIGHT = 50
@@ -89,6 +90,11 @@ def main():
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
+            key = pygame.key.get_pressed()
+            if key[pygame.K_w]: player1_vertical_offset = -4
+            if key[pygame.K_s]: player1_vertical_offset = 4
+            if key[pygame.K_o]: player2_vertical_offset = -4
+            if key[pygame.K_l]: player2_vertical_offset = 4
 
         text1 = font.render("Player 1: {}".format(player1_score), True, PALE_GREEN)
         text2 = font.render("Player 2: {}".format(player2_score), True, PALE_GREEN)
@@ -117,14 +123,14 @@ def main():
             pass # Do nothing
         
         # Move player 1, check if he collides with an edge
-        player1rect = player1rect.move(player1_offset)
+        player1rect = player1rect.move([0, player1_vertical_offset])
         if player1rect.top < 0 or player1rect.bottom > fieldrect.height:
-            flip_vert(player1_offset)
+            player1rect = player1rect.move([0, -player1_vertical_offset])
 
         # Move player 2, check if he collides with an edge
-        player2rect = player2rect.move(player2_offset)
+        player2rect = player2rect.move([0, player2_vertical_offset])
         if player2rect.top < 0 or player2rect.bottom > fieldrect.height:
-            flip_vert(player2_offset)
+            player2rect.move([0, -player2_vertical_offset])
 
         # Print images to screen
         screen.blit(field, fieldrect)
