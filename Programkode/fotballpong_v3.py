@@ -2,11 +2,11 @@
 Fotballpong v3
 Lisens: Creative Commons BY-SA bitjungle
 TODO versjon 3:
-* Implementere styring av spillere med tastatur
 * Flytte kode ut fra main()
 TODO versjon 4:
 * Objektorientere
 * Lydeffekter
+* Player 2 AI
 '''
 import sys
 import pygame
@@ -130,7 +130,7 @@ def main():
         # Move player 2, check if he collides with an edge
         player2rect = player2rect.move([0, player2_vertical_offset])
         if player2rect.top < 0 or player2rect.bottom > fieldrect.height:
-            player2rect.move([0, -player2_vertical_offset])
+            player2rect = player2rect.move([0, -player2_vertical_offset])
 
         # Print images to screen
         screen.blit(field, fieldrect)
