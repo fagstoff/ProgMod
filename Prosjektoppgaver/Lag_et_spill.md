@@ -11,6 +11,8 @@ Lag et enkelt spill som kjører i et konsollvindu.
 
 ## Vurderingskriterier
 
+Hovedhensikten med dette prosjektet er at du viser at du behersker grunnleggende programmering i Python. Prosjektet ditt vil vurderes ut i fra dette. Spillet i seg selv er ikke viktig for vurderinga. Spillet skal oppfylle disse kriteriene:
+
 * Spillet skal kjøres i et konsollvindu.
 * Spillet skal bruke `print()` og `input()` for kommunikasjon med spilleren.
 * Programkoden skal inneholde bruk av kontrollstrukturene `ìf`, `for` og `while`.
