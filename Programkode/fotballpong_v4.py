@@ -20,10 +20,7 @@ class MovingImage():
         if self.get_variable('offset') is None:
             self.set_variable('offset', [0, 0])
 
-    def move(self, offset):
-        self.rect = self.rect.move(offset)
-
-    def moveB(self):
+    def move(self):
         self.rect = self.rect.move(self._vars['offset'])
 
     def colliderect(self, rect):
@@ -49,6 +46,11 @@ class Player(MovingImage):
     '''Football player object'''
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        self._vars['offset'][0] = 0 # Players can only move vertical
+    
+    def set_offset(self, vert_offset):
+        '''Set the vertical offset for the player'''
+        self._vars['offset'][1] = vert_offset
 
 class Ball(MovingImage):
     '''Ball object'''
@@ -88,10 +90,6 @@ def main():
     goal1.fill(LIGHT_GRAY)
     goal2.fill(LIGHT_GRAY)
 
-    # Initial speed of ball and players in x and y direction
-    player1_vertical_offset = 0
-    player2_vertical_offset = 0
-
      # Ball will bounce x pixels from the edge of the field
     FIELD_PADDING_LEFTRIGHT = 50
     FIELD_PADDING_TOPBOTTOM = 25
@@ -127,17 +125,17 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT: sys.exit()
             key = pygame.key.get_pressed()
-            if key[pygame.K_w]: player1_vertical_offset = -4
-            if key[pygame.K_s]: player1_vertical_offset = 4
-            if key[pygame.K_o]: player2_vertical_offset = -4
-            if key[pygame.K_l]: player2_vertical_offset = 4
+            if key[pygame.K_w]: p1.set_offset(-4)
+            if key[pygame.K_s]: p1.set_offset(4)
+            if key[pygame.K_o]: p2.set_offset(-4)
+            if key[pygame.K_l]: p2.set_offset(4)
 
         player1_score_txt = font.render("Player 1: {}".format(player1_score), True, PALE_GREEN)
         player2_score_txt = font.render("Player 2: {}".format(player2_score), True, PALE_GREEN)
         goal_text = font.render("GOAL!", True, GOLD)
 
         # Moving the ball
-        ball.moveB()
+        ball.move()
 
         # Check if the ball collides with a player or goal or field edge
         if ball.colliderect(p1.rect):
@@ -162,15 +160,16 @@ def main():
             pass # Do nothing
         
         # Move player 1, check if he collides with an edge
-        p1.move([0, player1_vertical_offset])
+        p1.move()
         if p1.rect.top < 0 or p1.rect.bottom > fieldrect.height:
-            #player1rect = player1rect.move([0, -player1_vertical_offset])
-            p1.move([0, -player1_vertical_offset])
+            p1.flip_vert()
+            p1.move()
 
         # Move player 2, check if he collides with an edge
-        p2.move([0, player2_vertical_offset])
+        p2.move()
         if p2.rect.top < 0 or p2.rect.bottom > fieldrect.height:
-            p2.rect = p2.rect.move([0, -player2_vertical_offset])
+            p2.flip_vert()
+            p2.move()
 
         # Print images to screen
         if goal_scored == True:
