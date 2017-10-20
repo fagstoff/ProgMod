@@ -11,26 +11,35 @@ import sys
 import pygame
 
 class MovingImage():
-    def __init__(self, image):
+    def __init__(self, **kwargs):
         super(MovingImage, self).__init__()
-        self.image = pygame.image.load(image)
+        self._vars = kwargs
+        self.image = pygame.image.load(self.get_variable('image'))
         self.rect = self.image.get_rect()
+
     def move(self, offset):
         self.rect = self.rect.move(offset)
+
     def colliderect(self, rect):
         return self.rect.colliderect(rect)
 
+    def get_variable(self, key):
+        '''Get a variable value, returns None if the variable is not set'''
+        return self._vars.get(key, None)
+
+    def set_variable(self, key, val):
+        '''Set a variable value'''
+        self._vars[key] = val
     
 class Player(MovingImage):
     '''Football player object'''
-    def hoho():
-        print("hoho")
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
 class Ball(MovingImage):
-    '''Football player object'''
-    def haha():
-        print("haha")
-
+    '''Ball object'''
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
 def center_rect_on_rect(rect, target_rect):
     '''Center a rect in the middle of a target rect'''
@@ -56,9 +65,9 @@ def main():
 
     # Loading images
     field = pygame.image.load('fotballpong_bane.png')
-    ball = Ball("fotballpong_ball.png")
-    p1 = Player("fotballpong_spiller_v.png")
-    p2 = Player("fotballpong_spiller_h.png")
+    ball = Ball(image="fotballpong_ball.png")
+    p1 = Player(image="fotballpong_spiller_v.png")
+    p2 = Player(image="fotballpong_spiller_h.png")
 
     fieldrect = field.get_rect()
 
