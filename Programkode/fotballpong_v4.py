@@ -11,17 +11,31 @@ import sys
 import pygame
 
 class MovingImage():
+    '''A moving image object'''
     def __init__(self, **kwargs):
         super(MovingImage, self).__init__()
         self._vars = kwargs
         self.image = pygame.image.load(self.get_variable('image'))
         self.rect = self.image.get_rect()
+        if self.get_variable('offset') is None:
+            self.set_variable('offset', [0, 0])
 
     def move(self, offset):
         self.rect = self.rect.move(offset)
 
+    def moveB(self):
+        self.rect = self.rect.move(self._vars['offset'])
+
     def colliderect(self, rect):
         return self.rect.colliderect(rect)
+
+    def flip_horiz(self):
+        '''Flip the x value in the offset [x, y] pair'''
+        self._vars['offset'][0] = -self._vars['offset'][0]
+
+    def flip_vert(self):
+        '''Flip the y value in the offset [x, y] pair'''
+        self._vars['offset'][1] = -self._vars['offset'][1]
 
     def get_variable(self, key):
         '''Get a variable value, returns None if the variable is not set'''
@@ -46,14 +60,6 @@ def center_rect_on_rect(rect, target_rect):
     rect.top = (target_rect.height // 2) - (rect.height // 2)
     rect.left = (target_rect.width // 2) - (rect.width // 2)
 
-def flip_horiz(offset):
-    '''Flip the x value in a [x, y] pair'''
-    offset[0] = -offset[0]
-
-def flip_vert(offset):
-    '''Flip the y value in a [x, y] pair'''
-    offset[1] = -offset[1]
-
 def main():
     '''Game main loop'''
     pygame.init()
@@ -65,7 +71,7 @@ def main():
 
     # Loading images
     field = pygame.image.load('fotballpong_bane.png')
-    ball = Ball(image="fotballpong_ball.png")
+    ball = Ball(image="fotballpong_ball.png", offset=[5, 5])
     p1 = Player(image="fotballpong_spiller_v.png")
     p2 = Player(image="fotballpong_spiller_h.png")
 
@@ -83,7 +89,6 @@ def main():
     goal2.fill(LIGHT_GRAY)
 
     # Initial speed of ball and players in x and y direction
-    ball_offset = [5, 5]
     player1_vertical_offset = 0
     player2_vertical_offset = 0
 
@@ -132,27 +137,27 @@ def main():
         goal_text = font.render("GOAL!", True, GOLD)
 
         # Moving the ball
-        ball.move(ball_offset)
+        ball.moveB()
 
         # Check if the ball collides with a player or goal or field edge
         if ball.colliderect(p1.rect):
-            flip_horiz(ball_offset)
+            ball.flip_horiz()
         elif ball.colliderect(p2.rect):
-            flip_horiz(ball_offset)
+            ball.flip_horiz()
         elif ball.colliderect(goal1rect):
             player2_score += 1
-            flip_horiz(ball_offset)
+            ball.flip_horiz()
             center_rect_on_rect(ball.rect, fieldrect)
             goal_scored = True
         elif ball.rect.colliderect(goal2rect):
             player1_score += 1
-            flip_horiz(ball_offset)
+            ball.flip_horiz()
             center_rect_on_rect(ball.rect, fieldrect)
             goal_scored = True
         elif ball.rect.left < FIELD_PADDING_LEFTRIGHT or ball.rect.right > fieldrect.width - FIELD_PADDING_LEFTRIGHT: 
-            flip_horiz(ball_offset)
+            ball.flip_horiz()
         elif ball.rect.top - FIELD_PADDING_TOPBOTTOM < 0 or ball.rect.bottom > fieldrect.height - FIELD_PADDING_TOPBOTTOM:
-            flip_vert(ball_offset)
+            ball.flip_vert()
         else:
             pass # Do nothing
         
