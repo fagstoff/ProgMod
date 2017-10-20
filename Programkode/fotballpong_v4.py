@@ -10,13 +10,26 @@ TODO versjon 5:
 import sys
 import pygame
 
-class Player(pygame.sprite.Sprite):
+class MovingImage():
     def __init__(self, image):
-        super(Player, self).__init__()
+        super(MovingImage, self).__init__()
         self.image = pygame.image.load(image)
         self.rect = self.image.get_rect()
     def move(self, offset):
         self.rect = self.rect.move(offset)
+    def colliderect(self, rect):
+        return self.rect.colliderect(rect)
+
+    
+class Player(MovingImage):
+    '''Football player object'''
+    def hoho():
+        print("hoho")
+
+class Ball(MovingImage):
+    '''Football player object'''
+    def haha():
+        print("haha")
 
 
 def center_rect_on_rect(rect, target_rect):
@@ -43,12 +56,11 @@ def main():
 
     # Loading images
     field = pygame.image.load('fotballpong_bane.png')
-    ball = pygame.image.load("fotballpong_ball.png")
+    ball = Ball("fotballpong_ball.png")
     p1 = Player("fotballpong_spiller_v.png")
     p2 = Player("fotballpong_spiller_h.png")
 
     fieldrect = field.get_rect()
-    ballrect = ball.get_rect()
 
     goal1 = pygame.Surface((25,100))
     goal2 = pygame.Surface((25,100))
@@ -71,7 +83,7 @@ def main():
     FIELD_PADDING_TOPBOTTOM = 25
 
     screen = pygame.display.set_mode(fieldrect.size)
-    caption = pygame.display.set_caption("Fotballpong v3")
+    caption = pygame.display.set_caption("Fotballpong v4")
     clock = pygame.time.Clock()
     FPS = 50 # Limit frames per second
 
@@ -89,7 +101,7 @@ def main():
     p2.rect.left = (fieldrect.width // 2) + (fieldrect.width // 4)
 
     # Set initial ball position
-    center_rect_on_rect(ballrect, fieldrect)
+    center_rect_on_rect(ball.rect, fieldrect)
 
     # Set initial score
     player1_score = 0
@@ -111,26 +123,26 @@ def main():
         goal_text = font.render("GOAL!", True, GOLD)
 
         # Moving the ball
-        ballrect = ballrect.move(ball_offset)
+        ball.move(ball_offset)
 
         # Check if the ball collides with a player or goal or field edge
-        if ballrect.colliderect(p1.rect):
+        if ball.colliderect(p1.rect):
             flip_horiz(ball_offset)
-        elif ballrect.colliderect(p2.rect):
+        elif ball.colliderect(p2.rect):
             flip_horiz(ball_offset)
-        elif ballrect.colliderect(goal1rect):
+        elif ball.colliderect(goal1rect):
             player2_score += 1
             flip_horiz(ball_offset)
-            center_rect_on_rect(ballrect, fieldrect)
+            center_rect_on_rect(ball.rect, fieldrect)
             goal_scored = True
-        elif ballrect.colliderect(goal2rect):
+        elif ball.rect.colliderect(goal2rect):
             player1_score += 1
             flip_horiz(ball_offset)
-            center_rect_on_rect(ballrect, fieldrect)
+            center_rect_on_rect(ball.rect, fieldrect)
             goal_scored = True
-        elif ballrect.left < FIELD_PADDING_LEFTRIGHT or ballrect.right > fieldrect.width - FIELD_PADDING_LEFTRIGHT: 
+        elif ball.rect.left < FIELD_PADDING_LEFTRIGHT or ball.rect.right > fieldrect.width - FIELD_PADDING_LEFTRIGHT: 
             flip_horiz(ball_offset)
-        elif ballrect.top - FIELD_PADDING_TOPBOTTOM < 0 or ballrect.bottom > fieldrect.height - FIELD_PADDING_TOPBOTTOM:
+        elif ball.rect.top - FIELD_PADDING_TOPBOTTOM < 0 or ball.rect.bottom > fieldrect.height - FIELD_PADDING_TOPBOTTOM:
             flip_vert(ball_offset)
         else:
             pass # Do nothing
@@ -157,7 +169,7 @@ def main():
         screen.blit(player2_score_txt,(PLAYER2_SCORE_POS_LEFT, TEXT_POS_TOP))
         screen.blit(p1.image, p1.rect)
         screen.blit(p2.image, p2.rect)
-        screen.blit(ball, ballrect)
+        screen.blit(ball.image, ball.rect)
         screen.blit(goal1, goal1rect)
         screen.blit(goal2, goal2rect)
         pygame.display.flip()
