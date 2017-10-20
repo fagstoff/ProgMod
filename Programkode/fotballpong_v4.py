@@ -47,10 +47,14 @@ class Player(MovingImage):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self._vars['offset'][0] = 0 # Players can only move vertical
+        self._vars['score'] = 0 # initial score
     
     def set_offset(self, vert_offset):
         '''Set the vertical offset for the player'''
         self._vars['offset'][1] = vert_offset
+    
+    def increment_score(self):
+        self._vars['score'] += 1
 
 class Ball(MovingImage):
     '''Ball object'''
@@ -115,9 +119,6 @@ def main():
     # Set initial ball position
     center_rect_on_rect(ball.rect, fieldrect)
 
-    # Set initial score
-    player1_score = 0
-    player2_score = 0
     goal_scored = False
 
 
@@ -130,8 +131,8 @@ def main():
             if key[pygame.K_o]: p2.set_offset(-4)
             if key[pygame.K_l]: p2.set_offset(4)
 
-        player1_score_txt = font.render("Player 1: {}".format(player1_score), True, PALE_GREEN)
-        player2_score_txt = font.render("Player 2: {}".format(player2_score), True, PALE_GREEN)
+        player1_score_txt = font.render("Player 1: {}".format(p1.get_variable('score')), True, PALE_GREEN)
+        player2_score_txt = font.render("Player 2: {}".format(p2.get_variable('score')), True, PALE_GREEN)
         goal_text = font.render("GOAL!", True, GOLD)
 
         # Moving the ball
@@ -143,12 +144,12 @@ def main():
         elif ball.colliderect(p2.rect):
             ball.flip_horiz()
         elif ball.colliderect(goal1rect):
-            player2_score += 1
+            p2.increment_score()
             ball.flip_horiz()
             center_rect_on_rect(ball.rect, fieldrect)
             goal_scored = True
         elif ball.rect.colliderect(goal2rect):
-            player1_score += 1
+            p1.increment_score()
             ball.flip_horiz()
             center_rect_on_rect(ball.rect, fieldrect)
             goal_scored = True
@@ -173,6 +174,7 @@ def main():
 
         # Print images to screen
         if goal_scored == True:
+            #BUG teksten vises ikke
             screen.blit(goal_text,(GOAL_POS_LEFT-28, TEXT_POS_TOP+150))
             pygame.display.flip()
             pygame.time.wait(1000)
