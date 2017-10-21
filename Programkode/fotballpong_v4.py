@@ -114,6 +114,32 @@ class Ball(MovingImage):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+class TextElement(GameObject):
+    '''Game text elements'''
+    def __init__(self, **kwargs):
+        super(TextElement, self).__init__(**kwargs)
+        if self.get_variable('fontfile') is None:
+            self.set_variable('fontfile', 'SourceCodePro-Regular.ttf')
+        if self.get_variable('fontsize') is None:
+            self.set_variable('fontsize', 24)
+        self._font = pygame.font.Font(self.get_variable('fontfile'), self.get_variable('fontsize'))
+
+        if self.get_variable('color') is None:
+            self.set_variable('color', (0,0,0))
+        if self.get_variable('text') is None:
+            self.set_variable('text', '')
+        if self.get_variable('antialias') is None:
+            self.set_variable('antialias', True)
+        
+        self.render(self.get_variable('text'))
+    
+    def render(self, text=None):
+        if text != None: self.set_variable('text', text)
+        self.image = self._font.render(self.get_variable('text'), 
+                                       self.get_variable('antialias'), 
+                                       self.get_variable('color'))
+
+
 
 def main():
     '''Game main loop'''
@@ -143,12 +169,13 @@ def main():
     FPS = 50 # Limit frames per second
 
     # Preparing the scoreboard
-    font = pygame.font.Font("SourceCodePro-Regular.ttf", 24)
-    font_large = pygame.font.Font("SourceCodePro-Regular.ttf", 48)
+    PLAYER1_STATIC_TXT = 'Player 1 (↑W ↓S): {}'
+    PLAYER2_STATIC_TXT = 'Player 2 (↑O ↓L): {}'
+    p1_txt = TextElement(fontfile='SourceCodePro-Regular.ttf', fontsize=24, color=PALE_GREEN)
+    p2_txt = TextElement(fontfile='SourceCodePro-Regular.ttf', fontsize=24, color=PALE_GREEN)
     TEXT_POS_TOP = 20
     PLAYER1_SCORE_POS_LEFT = field.rect.width // 8
     PLAYER2_SCORE_POS_LEFT = (field.rect.width // 2) + (field.rect.width // 8)
-    GOAL_TXT_POS_LEFT = (field.rect.width // 2)
 
     # Set initial player positions
     p1.set_top((field.rect.height // 2) - (p1.rect.height // 2))
@@ -159,10 +186,11 @@ def main():
     # Set initial ball position
     ball.center_on_rect(field.rect)
 
-    goal_scored = False
-    GOAL_TXT_DISPLAY_TIME = 2000
-    goal_txt_display_start_time = 0
-    goal_text = font_large.render(" GOAL!", True, GOLD)
+    goal_scored = False # Used for flagging a goal
+    GOAL_TXT_DISPLAY_TIME = 1000 # Number of milliseconds to display GOAL!
+    goal_txt_display_start_time = 0 # Keeping track of how long GOAL! has been displayed
+    goal_text = TextElement(fontfile='SourceCodePro-Regular.ttf', fontsize=48, text='GOAL!', color=GOLD)
+    goal_text.center_on_rect(field.rect)
 
     while True:
         for event in pygame.event.get():
@@ -174,8 +202,8 @@ def main():
             if key[pygame.K_l]: p2.set_offset(4)
 
         # Creating/updating the score board
-        player1_score_txt = font.render("Player 1 (↑W ↓S): {}".format(p1.get_variable('score')), True, PALE_GREEN)
-        player2_score_txt = font.render("Player 2(↑O ↓L): {}".format(p2.get_variable('score')), True, PALE_GREEN)
+        p1_txt.render(PLAYER1_STATIC_TXT.format(p1.get_variable('score')))
+        p2_txt.render(PLAYER2_STATIC_TXT.format(p2.get_variable('score')))
 
         # Moving the ball
         ball.move()
@@ -216,8 +244,8 @@ def main():
 
         # Print images to screen
         screen.blit(field.image, field.rect)
-        screen.blit(player1_score_txt,(PLAYER1_SCORE_POS_LEFT, TEXT_POS_TOP))
-        screen.blit(player2_score_txt,(PLAYER2_SCORE_POS_LEFT, TEXT_POS_TOP))
+        screen.blit(p1_txt.image,(PLAYER1_SCORE_POS_LEFT, TEXT_POS_TOP))
+        screen.blit(p2_txt.image,(PLAYER2_SCORE_POS_LEFT, TEXT_POS_TOP))
         screen.blit(p1.image, p1.rect)
         screen.blit(p2.image, p2.rect)
         screen.blit(ball.image, ball.rect)
@@ -228,7 +256,8 @@ def main():
             if goal_txt_display_start_time == 0:
                 goal_txt_display_start_time = pygame.time.get_ticks()
             if pygame.time.get_ticks() - goal_txt_display_start_time < GOAL_TXT_DISPLAY_TIME:
-                screen.blit(goal_text,(GOAL_TXT_POS_LEFT - goal_text.get_rect().width // 2, field.rect.height // 2))
+                #TODO fix positioning
+                screen.blit(goal_text.image,(goal_text.rect.left - 60, goal_text.rect.top - 70))
             else: 
                 goal_txt_display_start_time = 0
                 goal_scored = False # resetting
