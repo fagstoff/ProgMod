@@ -3,8 +3,10 @@ Fotballpong v4
 License: Creative Commons BY-SA bitjungle
 TODO versjon 5:
 * Lydeffekter
+* Spiller beveger seg bare ved keypress
 TODO versjon 6:
 * Player 2 AI
+* Tidsbegrenset spill
 '''
 import sys
 import pygame
@@ -36,25 +38,16 @@ class GameObject(pygame.sprite.Sprite):
     def set_left(self, pos):
         self.rect.left = pos 
 
-    def get_width(self):
-        '''Returns the width of the object rect'''
-        return self.rect.width
-    
-    def get_height(self):
-        '''Returns the height of the object rect'''
-        return self.rect.height
-    
     def center_on_rect(self, target_rect):
         '''Center the object in the middle of a target rect'''
         self.rect.top = (target_rect.height // 2) - (self.rect.height // 2)
         self.rect.left = (target_rect.width // 2) - (self.rect.width // 2)
 
-
 class Field(GameObject):
     '''The football field'''
     def __init__(self, **kwargs):
         super(Field, self).__init__(**kwargs)
-        self.image = pygame.image.load(self.get_variable('image'))
+        self.image = pygame.image.load(self.get_variable('imagefile'))
         self.rect = self.image.get_rect()
 
 class Goal(GameObject):
@@ -82,7 +75,7 @@ class MovingImage(GameObject):
     '''A moving image object'''
     def __init__(self, **kwargs):
         super(MovingImage, self).__init__(**kwargs)
-        self.image = pygame.image.load(self.get_variable('image'))
+        self.image = pygame.image.load(self.get_variable('imagefile'))
         self.rect = self.image.get_rect()
         if self.get_variable('offset') is None:
             self.set_variable('offset', [0, 0])
@@ -127,17 +120,17 @@ def main():
     pygame.init()
 
     # Creating game objects
-    field = Field(image='fotballpong_bane.png')
-    ball = Ball(image="fotballpong_ball.png", offset=[5, 5])
-    p1 = Player(image="fotballpong_spiller_v.png")
-    p2 = Player(image="fotballpong_spiller_h.png")
+    field = Field(imagefile='fotballpong_bane.png')
+    ball = Ball(imagefile="fotballpong_ball.png", offset=[5, 5])
+    p1 = Player(imagefile="fotballpong_spiller_v.png")
+    p2 = Player(imagefile="fotballpong_spiller_h.png")
 
     g1 = Goal()
-    g1.set_top((field.get_height() // 2) - (g1.get_height() // 2))
+    g1.set_top((field.rect.height // 2) - (g1.rect.height // 2))
     g1.set_left(25)
     g2 = Goal()
-    g2.set_top((field.get_height() // 2) - (g1.get_height() // 2))
-    g2.set_left(field.get_width() - 50)
+    g2.set_top((field.rect.height // 2) - (g1.rect.height // 2))
+    g2.set_left(field.rect.width - 50)
     
      # Ball will bounce x pixels from the edge of the field
     FIELD_PADDING_LEFTRIGHT = 50
@@ -151,15 +144,15 @@ def main():
     # Preparing the scoreboard
     font = pygame.font.Font("SourceCodePro-Regular.ttf", 24)
     TEXT_POS_TOP = 20
-    PLAYER1_SCORE_POS_LEFT = field.get_width() // 8
-    PLAYER2_SCORE_POS_LEFT = (field.get_width() // 2) + (field.get_width() // 8)
-    GOAL_TXT_POS_LEFT = (field.get_width() // 2)
+    PLAYER1_SCORE_POS_LEFT = field.rect.width // 8
+    PLAYER2_SCORE_POS_LEFT = (field.rect.width // 2) + (field.rect.width // 8)
+    GOAL_TXT_POS_LEFT = (field.rect.width // 2)
 
     # Set initial player positions
-    p1.set_top((field.get_height() // 2) - (p1.get_height() // 2))
-    p2.set_top((field.get_height() // 2) - (p2.get_height() // 2))
-    p1.set_left((field.get_width() // 2) - (field.get_width() // 4) - p1.get_width())
-    p2.set_left((field.get_width() // 2) + (field.get_width() // 4))
+    p1.set_top((field.rect.height // 2) - (p1.rect.height // 2))
+    p2.set_top((field.rect.height // 2) - (p2.rect.height // 2))
+    p1.set_left((field.rect.width // 2) - (field.rect.width // 4) - p1.rect.width)
+    p2.set_left((field.rect.width // 2) + (field.rect.width // 4))
 
     # Set initial ball position
     ball.center_on_rect(field.rect)
@@ -199,22 +192,22 @@ def main():
             ball.flip_horiz()
             ball.center_on_rect(field.rect)
             goal_scored = True
-        elif ball.rect.left < FIELD_PADDING_LEFTRIGHT or ball.rect.right > field.get_width() - FIELD_PADDING_LEFTRIGHT: 
+        elif ball.rect.left < FIELD_PADDING_LEFTRIGHT or ball.rect.right > field.rect.width - FIELD_PADDING_LEFTRIGHT: 
             ball.flip_horiz()
-        elif ball.rect.top - FIELD_PADDING_TOPBOTTOM < 0 or ball.rect.bottom > field.get_height() - FIELD_PADDING_TOPBOTTOM:
+        elif ball.rect.top - FIELD_PADDING_TOPBOTTOM < 0 or ball.rect.bottom > field.rect.height - FIELD_PADDING_TOPBOTTOM:
             ball.flip_vert()
         else:
             pass # Do nothing
         
         # Move player 1, check if he collides with an edge
         p1.move()
-        if p1.rect.top < 0 or p1.rect.bottom > field.get_height():
+        if p1.rect.top < 0 or p1.rect.bottom > field.rect.height:
             p1.flip_vert()
             p1.move()
 
         # Move player 2, check if he collides with an edge
         p2.move()
-        if p2.rect.top < 0 or p2.rect.bottom > field.get_height():
+        if p2.rect.top < 0 or p2.rect.bottom > field.rect.height:
             p2.flip_vert()
             p2.move()
 
