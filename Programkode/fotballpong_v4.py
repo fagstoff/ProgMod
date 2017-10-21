@@ -137,12 +137,14 @@ def main():
     FIELD_PADDING_TOPBOTTOM = 25
 
     screen = pygame.display.set_mode(field.rect.size)
+    #screen = pygame.display.set_mode(field.rect.size, pygame.FULLSCREEN)
     caption = pygame.display.set_caption("Fotballpong v4")
     clock = pygame.time.Clock()
     FPS = 50 # Limit frames per second
 
     # Preparing the scoreboard
     font = pygame.font.Font("SourceCodePro-Regular.ttf", 24)
+    font_large = pygame.font.Font("SourceCodePro-Regular.ttf", 48)
     TEXT_POS_TOP = 20
     PLAYER1_SCORE_POS_LEFT = field.rect.width // 8
     PLAYER2_SCORE_POS_LEFT = (field.rect.width // 2) + (field.rect.width // 8)
@@ -158,21 +160,22 @@ def main():
     ball.center_on_rect(field.rect)
 
     goal_scored = False
-    goal_text = font.render("GOAL!", True, GOLD)
-
+    GOAL_TXT_DISPLAY_TIME = 2000
+    goal_txt_display_start_time = 0
+    goal_text = font_large.render(" GOAL!", True, GOLD)
 
     while True:
         for event in pygame.event.get():
-            if event.type == pygame.QUIT: sys.exit()
             key = pygame.key.get_pressed()
+            if event.type == pygame.QUIT or key[pygame.K_q] or key[pygame.K_ESCAPE]: sys.exit()
             if key[pygame.K_w]: p1.set_offset(-4)
             if key[pygame.K_s]: p1.set_offset(4)
             if key[pygame.K_o]: p2.set_offset(-4)
             if key[pygame.K_l]: p2.set_offset(4)
 
         # Creating/updating the score board
-        player1_score_txt = font.render("Player 1: {}".format(p1.get_variable('score')), True, PALE_GREEN)
-        player2_score_txt = font.render("Player 2: {}".format(p2.get_variable('score')), True, PALE_GREEN)
+        player1_score_txt = font.render("Player 1 (↑W ↓S): {}".format(p1.get_variable('score')), True, PALE_GREEN)
+        player2_score_txt = font.render("Player 2(↑O ↓L): {}".format(p2.get_variable('score')), True, PALE_GREEN)
 
         # Moving the ball
         ball.move()
@@ -212,12 +215,6 @@ def main():
             p2.move()
 
         # Print images to screen
-        if goal_scored == True:
-            #BUG teksten vises ikke
-            screen.blit(goal_text,(GOAL_TXT_POS_LEFT-28, TEXT_POS_TOP+150))
-            pygame.display.flip()
-            pygame.time.wait(1000)
-            goal_scored = False # resetting
         screen.blit(field.image, field.rect)
         screen.blit(player1_score_txt,(PLAYER1_SCORE_POS_LEFT, TEXT_POS_TOP))
         screen.blit(player2_score_txt,(PLAYER2_SCORE_POS_LEFT, TEXT_POS_TOP))
@@ -226,6 +223,16 @@ def main():
         screen.blit(ball.image, ball.rect)
         screen.blit(g1.image, g1.rect)
         screen.blit(g2.image, g2.rect)
+
+        if goal_scored == True:
+            if goal_txt_display_start_time == 0:
+                goal_txt_display_start_time = pygame.time.get_ticks()
+            if pygame.time.get_ticks() - goal_txt_display_start_time < GOAL_TXT_DISPLAY_TIME:
+                screen.blit(goal_text,(GOAL_TXT_POS_LEFT - goal_text.get_rect().width // 2, field.rect.height // 2))
+            else: 
+                goal_txt_display_start_time = 0
+                goal_scored = False # resetting
+
         pygame.display.flip()
 
         clock.tick(FPS)
