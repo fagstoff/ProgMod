@@ -6,7 +6,7 @@ TODO versjon 5:
 * Spiller beveger seg bare ved keypress
 TODO versjon 6:
 * Player 2 AI
-* Tidsbegrenset spill
+* Tidsbegrenset spill (klokke)
 '''
 import sys
 import pygame
@@ -172,10 +172,11 @@ def main():
     PLAYER1_STATIC_TXT = 'Player 1 (↑W ↓S): {}'
     PLAYER2_STATIC_TXT = 'Player 2 (↑O ↓L): {}'
     p1_txt = TextElement(fontfile='SourceCodePro-Regular.ttf', fontsize=24, color=PALE_GREEN)
+    p1_txt.set_top(20)
+    p1_txt.set_left(field.rect.width // 8)
     p2_txt = TextElement(fontfile='SourceCodePro-Regular.ttf', fontsize=24, color=PALE_GREEN)
-    TEXT_POS_TOP = 20
-    PLAYER1_SCORE_POS_LEFT = field.rect.width // 8
-    PLAYER2_SCORE_POS_LEFT = (field.rect.width // 2) + (field.rect.width // 8)
+    p2_txt.set_top(20)
+    p2_txt.set_left((field.rect.width // 2) + (field.rect.width // 8))
 
     # Set initial player positions
     p1.set_top((field.rect.height // 2) - (p1.rect.height // 2))
@@ -209,16 +210,16 @@ def main():
         ball.move()
 
         # Check if the ball collides with a player or goal or field edge
-        if ball.colliderect(p1.rect):
+        if ball.colliderect(p1.rect): # hitting player 1
             ball.flip_horiz()
-        elif ball.colliderect(p2.rect):
+        elif ball.colliderect(p2.rect): # hitting player 2
             ball.flip_horiz()
-        elif ball.colliderect(g1.rect):
+        elif ball.colliderect(g1.rect): # player 2 scores
             p2.increment_score()
             ball.flip_horiz()
             ball.center_on_rect(field.rect)
             goal_scored = True
-        elif ball.rect.colliderect(g2.rect):
+        elif ball.colliderect(g2.rect): # player 1 scores
             p1.increment_score()
             ball.flip_horiz()
             ball.center_on_rect(field.rect)
@@ -244,8 +245,8 @@ def main():
 
         # Print images to screen
         screen.blit(field.image, field.rect)
-        screen.blit(p1_txt.image,(PLAYER1_SCORE_POS_LEFT, TEXT_POS_TOP))
-        screen.blit(p2_txt.image,(PLAYER2_SCORE_POS_LEFT, TEXT_POS_TOP))
+        screen.blit(p1_txt.image,p1_txt.rect)
+        screen.blit(p2_txt.image,p2_txt.rect)
         screen.blit(p1.image, p1.rect)
         screen.blit(p2.image, p2.rect)
         screen.blit(ball.image, ball.rect)
