@@ -4,6 +4,7 @@ License: Creative Commons BY-SA bitjungle
 TODO versjon 5:
 * Lydeffekter
 * Spiller beveger seg bare ved keypress
+* Ball spretter med vinkel fra spiller avhengig av treffpunkt
 TODO versjon 6:
 * Player 2 AI
 * Tidsbegrenset spill (klokke)
@@ -88,11 +89,11 @@ class MovingImage(GameObject):
 
     def flip_horiz(self):
         '''Flip the x value in the offset [x, y] pair'''
-        self._vars['offset'][0] = -self._vars['offset'][0]
+        self._vars['offset'][0] *= -1
 
     def flip_vert(self):
         '''Flip the y value in the offset [x, y] pair'''
-        self._vars['offset'][1] = -self._vars['offset'][1]
+        self._vars['offset'][1] *= -1
 
 class Player(MovingImage):
     '''Football player object'''
@@ -122,7 +123,11 @@ class TextElement(GameObject):
             self.set_variable('fontfile', 'SourceCodePro-Regular.ttf')
         if self.get_variable('fontsize') is None:
             self.set_variable('fontsize', 24)
-        self._font = pygame.font.Font(self.get_variable('fontfile'), self.get_variable('fontsize'))
+        
+        try: 
+            self._font = pygame.font.Font(self.get_variable('fontfile'), self.get_variable('fontsize'))
+        except OSError as e:
+            self._font = pygame.font.SysFont('courier', self.get_variable('fontsize'))
 
         if self.get_variable('color') is None:
             self.set_variable('color', (0,0,0))
@@ -150,23 +155,18 @@ def main():
     ball = Ball(imagefile="fotballpong_ball.png", offset=[5, 5])
     p1 = Player(imagefile="fotballpong_spiller_v.png")
     p2 = Player(imagefile="fotballpong_spiller_h.png")
-
     g1 = Goal()
+    g2 = Goal()
+
+    # Setting up goal positions on field
     g1.set_top((field.rect.height // 2) - (g1.rect.height // 2))
     g1.set_left(25)
-    g2 = Goal()
     g2.set_top((field.rect.height // 2) - (g1.rect.height // 2))
     g2.set_left(field.rect.width - 50)
     
      # Ball will bounce x pixels from the edge of the field
     FIELD_PADDING_LEFTRIGHT = 50
     FIELD_PADDING_TOPBOTTOM = 25
-
-    screen = pygame.display.set_mode(field.rect.size)
-    #screen = pygame.display.set_mode(field.rect.size, pygame.FULLSCREEN)
-    caption = pygame.display.set_caption("Fotballpong v4")
-    clock = pygame.time.Clock()
-    FPS = 50 # Limit frames per second
 
     # Preparing the scoreboard
     PLAYER1_STATIC_TXT = 'Player 1 (↑W ↓S): {}'
@@ -192,6 +192,15 @@ def main():
     goal_txt_display_start_time = 0 # Keeping track of how long GOAL! has been displayed
     goal_text = TextElement(fontfile='SourceCodePro-Regular.ttf', fontsize=48, text='GOAL!', color=GOLD)
     goal_text.center_on_rect(field.rect)
+
+    # Preparing the screen
+    screen = pygame.display.set_mode(field.rect.size)
+    #screen = pygame.display.set_mode(field.rect.size, pygame.FULLSCREEN)
+    caption = pygame.display.set_caption("Fotballpong v4")
+
+    # Setting up the clock
+    clock = pygame.time.Clock()
+    FPS = 50 # Limit frames per second
 
     while True:
         for event in pygame.event.get():
@@ -259,12 +268,12 @@ def main():
             if pygame.time.get_ticks() - goal_txt_display_start_time < GOAL_TXT_DISPLAY_TIME:
                 #TODO fix positioning
                 screen.blit(goal_text.image,(goal_text.rect.left - 60, goal_text.rect.top - 70))
-            else: 
+            else:  # resetting 
                 goal_txt_display_start_time = 0
-                goal_scored = False # resetting
+                goal_scored = False
 
+        # Finish the loop, redraw display and tick the clock
         pygame.display.flip()
-
         clock.tick(FPS)
 
 if __name__ == '__main__':
