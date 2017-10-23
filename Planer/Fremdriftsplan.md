@@ -13,8 +13,8 @@
 | 42 |[Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb)||
 | 43 |Fortsett med å lage spill||
 | 44 |[Plotting](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/matplotlib.ipynb)||
-| 45 |[Optimalisering](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/optimalisering_1.ipynb)||
-| 46 |[Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
+| 45 |[Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
+| 46 |[Optimalisering](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/optimalisering_1.ipynb)||
 | 47 |[Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
 | 48 |[Animasjoner med pygame](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjoner_med_pygame.ipynb)||
 | 49 |[Animasjon av modeller](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_modeller.ipynb)||
