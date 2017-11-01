@@ -12,10 +12,15 @@ Vi skal være på [Skagerak Energi på Floodeløkka i Porsgrunn](https://www.goo
 Programmet på dagen blir som følger:
 
 08:30: Samlet oppmøte og registrering i resepsjonen, forfriskninger utenfor møterom Oksen
+
 09:00: Velkommen til Skagerak Kraft (Kjetil)
+
 09:15: "Programmering og modellering", Kort om satsingen i det nye faget (Rune Mathiesen)
+
 09:30: Hvordan fungerer kraftmarkedet og hvorfor optimaliserer vi vannressursene våre i Skagerak Kraft? (Kjetil)
+
 10:00: Pause
+
 10:10: Noen eksempler på praktisk anvendelse av modellering hos Skagerak Kraft
 
 - Simulering av Kragerøvassdraget, flommodell (Beathe Furenes)
@@ -23,6 +28,9 @@ Programmet på dagen blir som følger:
 - Våre optimaliseringsmodeller for energidisponering; hva og hvordan gjør vi det (Tone Gammelsæter)
 
 11:00: Digitalisering (i Kraftbransjen) (John Gunnar Svendsen)
+
 11:30: Lett lunsj utenfor møterom Oksen
+
 12:15: Omvisning på Kraftsentralen (Terje Amundsen/Produksjonsvakt)
+
 12:45: Slutt
