@@ -20,7 +20,7 @@
 | 49 | [Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
 | 50 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/385779278784d8924143d559cda66f54a5230ef3/Fagstoff/euler.ipynb)||
 | 51 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/385779278784d8924143d559cda66f54a5230ef3/Fagstoff/enkle%20differensiallikninger.ipynb)||
-| 52 |||
+| 52 | ||
 | 1 |||
 | 2 |||
  |3 |||
