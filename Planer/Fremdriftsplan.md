@@ -18,8 +18,8 @@
 | 47 | [Plotting](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/matplotlib.ipynb)||
 | 48 | [Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
 | 49 | [Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
-| 50 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/385779278784d8924143d559cda66f54a5230ef3/Fagstoff/euler.ipynb)||
-| 51 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/385779278784d8924143d559cda66f54a5230ef3/Fagstoff/enkle%20differensiallikninger.ipynb)||
+| 50 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
+| 51 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkle%20differensiallikninger.ipynb)||
 | 52 | ||
 | 1 |||
 | 2 |||
