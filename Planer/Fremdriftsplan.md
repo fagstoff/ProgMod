@@ -10,16 +10,16 @@
 | 39 | [Funksjoner](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/funksjoner.ipynb) ||
 | 40 | [Kodekommentarer](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/kodekommentarer.ipynb)||
 | 41 | Høstferie ||
-| 42 |[Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb)||
-| 43 |Fortsett med å lage spill||
-| 44 |[Optimalisering](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/optimalisering_1.ipynb)||
-| 45 |[Plotting](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/matplotlib.ipynb)||
-| 46 |[Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
-| 47 |[Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
-| 48 |[Animasjoner med pygame](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjoner_med_pygame.ipynb)||
-| 49 |[Animasjon av modeller](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_modeller.ipynb)||
-| 50 |||
-| 51 |||
+| 42 | [Lag et enkelt spill](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/lag%20et%20enkelt%20spill.ipynb)||
+| 43 | Fortsett med å lage spill||
+| 44 | [Optimalisering](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/optimalisering_1.ipynb)|Fagdag 3|
+| 45 | Ferdigstillelse av spill||
+| 46 | Repetisjon grunnleggende programmering|Test?|
+| 47 | [Plotting](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/matplotlib.ipynb)||
+| 48 | [Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
+| 49 | [Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
+| 50 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/385779278784d8924143d559cda66f54a5230ef3/Fagstoff/euler.ipynb)||
+| 51 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/385779278784d8924143d559cda66f54a5230ef3/Fagstoff/enkle%20differensiallikninger.ipynb)||
 | 52 |||
 | 1 |||
 | 2 |||
