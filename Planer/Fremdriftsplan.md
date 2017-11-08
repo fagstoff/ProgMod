@@ -14,11 +14,11 @@
 | 43 | Fortsett med å lage spill||
 | 44 | [Optimalisering](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/optimalisering_1.ipynb)|[Fagdag 2 - Skagerak](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_2.md)|
 | 45 | Ferdigstillelse av spill||
-| 46 | Repetisjon grunnleggende programmering|Test?|
+| 46 | Repetisjon grunnleggende programmering||
 | 47 | [Plotting](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/matplotlib.ipynb)||
 | 48 | [Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
 | 49 | [Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
-| 50 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
+| 50 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)|[Fagdag 3 - HSN](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_3.md)|
 | 51 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkle%20differensiallikninger.ipynb)||
 | 52 | ||
 | 1 |||
