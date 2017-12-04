@@ -17,12 +17,11 @@
 | 46 | Repetisjon grunnleggende programmering||
 | 47 | [Plotting](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/matplotlib.ipynb)||
 | 48 | [Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
-| 49 | [Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
-| 50 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)|[Fagdag 3 - HSN](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_3.md)|
-| 51 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkle%20differensiallikninger.ipynb)||
-| 52 | ||
-| 1 |||
-| 2 |||
+| 49 | [Forberedelse til fagdag 1]()|[Fagdag 3 - HSN](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_3.md)|
+| 50 | [Forberedelse til fagdag 2]()|[Fagdag 3 - HSN](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_3.md)|
+| 51 | [Spredningsplott](https://no.wikipedia.org/wiki/Spredningsplott)||
+| 1 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)|
+| 2 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkle%20differensiallikninger.ipynb)||
  |3 |||
  |4 |||
  |5 |||
