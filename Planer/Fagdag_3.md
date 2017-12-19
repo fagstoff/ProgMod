@@ -12,4 +12,6 @@ Forberedelser:
 
 * **08:30-11:00** - Nivåregulering av vannreservoar
 * **11:00-11:30** - Lunch 
-* **11:30-14:00** - Temperaturregulering av varmluft
+* **11:30-14:00** - Nivåregulering av vannreservoar
+
+[Oppsummering](http://home.usn.no/finnh/fagdag_vgs/2017_vgs_prog_og_mod/fagdag_151217/fagdag_151217.pptx)
