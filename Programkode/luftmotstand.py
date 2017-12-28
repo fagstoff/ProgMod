@@ -18,7 +18,7 @@ t = [0]
 v = [v_0]
 
 def dv_tp1(v):
-    return g - k * v / m
+    return g - k * v / m #modell
 
 for x in range(0,3000):
     t.append(t[-1] + d_t)
@@ -27,6 +27,7 @@ for x in range(0,3000):
 print(v)
 
 plt.plot(t,v)
+plt.xlabel('Tid [s]')
 plt.ylabel('Fart [m/s]')
 plt.grid()
 plt.show()
