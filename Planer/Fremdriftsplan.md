@@ -20,12 +20,12 @@
 | 49 | [Forberedelse til fagdag - Tankmodell 1](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_1.ipynb)||
 | 50 | [Forberedelse til fagdag - Tankmodell 2](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_2.ipynb)|[Fagdag 3 - HSN](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_3.md)|
 | 51 | [Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
-| 1 | [Eulers metode](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)|
+| 1 | [Modellbegrepet](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/modellbegrepet.ipynb)|
 | 2 | Prøve ||
-| 3 | [Enkle differensiallikninger](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkle%20differensiallikninger.ipynb)||
-| 4 | [Tankmodell 3](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
-| 5 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
-| 5 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb)||
+| 3 | [Vertikalt fall med luftmotstand](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/luftmotstand.ipynb)||
+| 4 | [Euler](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
+| 5 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
+| 6 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
 | 7 |||
 | 8 |||
 | 10 |||
