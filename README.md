@@ -10,3 +10,5 @@ Mappa [Læreplan](https://github.com/fagstoff/ProgMod/tree/master/L%C3%A6replan)
 Programeksempler for faget er implementert i [Python](https://www.python.org/), og ligger i mappa [Programkode](https://github.com/fagstoff/ProgMod/tree/master/Programkode). Vær oppmerksom på at notebooks-filene i mappa [Fagstoff](https://github.com/fagstoff/ProgMod/tree/master/Fagstoff) også inneholder mye programkode.
 
 I mappa [Prosjektoppgaver](https://github.com/fagstoff/ProgMod/tree/master/Prosjektoppgaver) ligger det større oppgaver som egner seg til arbeid over lengre tid, og som kan brukes for vurdering i faget.
+
+Du er hjertelig velkommen til å bidra! Ta kontakt!
