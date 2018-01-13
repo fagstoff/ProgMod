@@ -11,4 +11,4 @@ Programeksempler for faget er implementert i [Python](https://www.python.org/), 
 
 I mappa [Prosjektoppgaver](https://github.com/fagstoff/ProgMod/tree/master/Prosjektoppgaver) ligger det større oppgaver som egner seg til arbeid over lengre tid, og som kan brukes for vurdering i faget.
 
-Du er hjertelig velkommen til å bidra!
+Du er hjertelig velkommen til å bidra! Ta kontakt!
