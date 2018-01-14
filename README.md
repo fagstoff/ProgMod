@@ -12,10 +12,10 @@ I mappa [Prosjektoppgaver](https://github.com/fagstoff/ProgMod/tree/master/Prosj
 
 ## Slik kan du bidra
 
-Alle som ønsker det inviteres til å bidra. Dette kan både gjøres ved å legge inn forslag, tips, ønsker eller andre kommentarer under [issues](https://github.com/fagstoff/ProgMod/issues).
+Alle som ønsker inviteres til å bidra. Dette kan både gjøres ved å legge inn forslag, tips, feilmeldinger, ønsker eller andre kommentarer under [issues](https://github.com/fagstoff/ProgMod/issues).
 
-Ønsker du å bidra med innhold kan det enkelt gjøres ved å:
+Ønsker du å bidra med innholdsproduksjon kan det enkelt gjøres ved å:
 
-1. Lag en fork av dette repoet.
+1. Lag en [fork](https://github.com/fagstoff/ProgMod#fork-destination-box) av dette repoet.
 1. Gjør endringer/lag innhold.
 1. Legg inn en pull request her.
