@@ -22,23 +22,23 @@
 | 51 | [Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
 | 1 | [Modellbegrepet](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/modellbegrepet.ipynb)|
 | 2 | Prøve ||
-| 3 | [Vertikalt fall med luftmotstand](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/luftmotstand.ipynb)||
-| 4 | [Euler](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
-| 5 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
-| 6 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
-| 7 |||
+| 3 | Gjennomgang av prøve - Repetisjon ||
+| 4 | [Vertikalt fall med luftmotstand](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/luftmotstand.ipynb)||
+| 5 | [Euler](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
+| 6 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
+| 7 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
 | 8 |||
 | 10 |||
-| 11 |[Fagdag 5 - Grimstad?]()||
- |12 |||
+| 11 |[Fagdag 5 - Grimstad](http://www.uia.no)|Må bekreftes|
+| 12 |||
 | 13 |||
 | 14 |||
 | 15 |||
 | 16 |||
-| 17 |[Fagdag 6 - UiO]()||
+| 17 |[Fagdag 6 - UiO](http://www.uio.no)|Må bekreftes|
 | 18 |||
 | 19 |||
 | 20 |||
-| 21 |[Fagdag 7 - ???]()||
+| 21 |[Fagdag 7 - ???]()|Ikke fastlagt ennå|
 | 22 |||
 | 23 |||
