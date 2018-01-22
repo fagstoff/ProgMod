@@ -23,12 +23,12 @@
 | 1 | [Modellbegrepet](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/modellbegrepet.ipynb)|
 | 2 | Prøve ||
 | 3 | Gjennomgang av prøve - Repetisjon ||
-| 4 | [Vertikalt fall med luftmotstand](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/luftmotstand.ipynb)||
-| 5 | [Euler](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
-| 6 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
-| 7 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
-| 8 |||
-| 10 |||
+| 4 | [Euler](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
+| 5 | [Enkle difflikninger](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkle%20differensiallikninger.ipynb)||
+| 6 | [Tankmodell 3](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
+| 7 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
+| 8 | Vinterferie ||
+| 10 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb) ||
 | 11 |[Fagdag 5 - Grimstad](http://www.uia.no)|Må bekreftes|
 | 12 |||
 | 13 |||
