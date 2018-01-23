@@ -18,4 +18,4 @@ Alle som ønsker inviteres til å bidra. Dette kan både gjøres ved å legge in
 
 1. Lag en [fork](https://github.com/fagstoff/ProgMod#fork-destination-box) av dette repoet.
 1. Gjør endringer/lag innhold.
-1. Legg inn en pull request her.
+1. Legg inn en [pull request](https://help.github.com/articles/about-pull-requests/) her.
