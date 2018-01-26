@@ -29,16 +29,16 @@
 | 7 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
 | 8 | Vinterferie ||
 | 10 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb) ||
-| 11 |[Fagdag 5 - Grimstad](http://www.uia.no)|Må bekreftes|
+| 11 |[Fagdag 4 - Grimstad](http://www.uia.no)|Må bekreftes|
 | 12 |||
 | 13 |||
 | 14 |||
 | 15 |||
 | 16 |||
-| 17 |[Fagdag 6 - UiO](http://www.uio.no)|Må bekreftes|
+| 17 |[Fagdag 4 - UiO](http://www.uio.no)|Må bekreftes|
 | 18 |||
 | 19 |||
 | 20 |||
-| 21 |[Fagdag 7 - ???]()|Ikke fastlagt ennå|
+| 21 |[Fagdag 6 - Prosjekt]()|Ikke fastlagt ennå|
 | 22 |||
 | 23 |||
