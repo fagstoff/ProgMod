@@ -35,7 +35,7 @@
 | 14 |||
 | 15 |||
 | 16 |||
-| 17 |[Fagdag 4 - UiO](http://www.uio.no)|Må bekreftes|
+| 17 |[Fagdag 5 - UiO](http://www.uio.no)|Må bekreftes|
 | 18 |||
 | 19 |||
 | 20 |||
