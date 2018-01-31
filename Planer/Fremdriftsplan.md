@@ -24,17 +24,17 @@
 | 2 | Prøve ||
 | 3 | Gjennomgang av prøve - Repetisjon ||
 | 4 | [Euler](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
-| 5 | [Enkle difflikninger](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/enkle%20differensiallikninger.ipynb)||
+| 5 | [Repetisjon tankmodell 2](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_2.ipynb)||
 | 6 | [Tankmodell 3](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
 | 7 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
 | 8 | Vinterferie ||
 | 10 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb) ||
 | 11 |[Fagdag 4 - Grimstad](http://www.uia.no)|Må bekreftes|
-| 12 |||
-| 13 |||
-| 14 |||
-| 15 |||
-| 16 |||
+| 12 |Praktisk prosjektoppgave||
+| 13 |Påskeferie||
+| 14 |Praktisk prosjektoppgave||
+| 15 |Praktisk prosjektoppgave||
+| 16 |Praktisk prosjektoppgave||
 | 17 |[Fagdag 5 - UiO](http://www.uio.no)|Må bekreftes|
 | 18 |||
 | 19 |||
