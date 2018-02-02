@@ -1,6 +1,7 @@
 '''
 Løsningsforslag til oppgave 2 på denne siden: 
 https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb 
+Lisens: Creative Commons BY-SA bitjungle (Rune Mathisen) 2018
 '''
 
 # Importerer nødvendige biblioteker
