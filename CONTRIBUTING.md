@@ -1,5 +1,14 @@
 # Retningslinjer for bidrag
 
+Ønsker du å bidra med innholdsproduksjon kan det enkelt gjøres ved å:
+
+1. Lag en [fork](https://github.com/fagstoff/ProgMod#fork-destination-box) av dette repoet.
+1. Gjør endringer/lag innhold.
+1. Legg inn en [pull request](https://help.github.com/articles/about-pull-requests/) her.
+1. Følg retningslinjene som er beskrevet under
+
+>TODO: Lage videotutorial?
+
 > TODO: Generell intro om hvorfor vi har retningslinjer...
 
 Retningslinjene er delt inn i tre hovedområder:
