@@ -4,7 +4,7 @@ __INGRESS TODO__
 
 ## Oppgave
 
-Bygg et fysisk system av to tanker som oppfyller noen gitte spesifikasjoner. Bruk simuleringer for å designe systemet før det bygges. Verifiser korreksjonsfaktoren C for vann som strømmer fritt ut av et hull.
+Bygg et fysisk system av to tanker som oppfyller noen gitte spesifikasjoner. Bruk simuleringer for å designe systemet før det bygges. Verifiser korreksjonsfaktoren C for vann som strømmer fritt ut av et hull. Lag en visualisering med pygame som viser nivået i tankene i sanntid.
 
 ## Spesifikasjoner
 
@@ -32,14 +32,23 @@ Bygg et fysisk system av to tanker som oppfyller noen gitte spesifikasjoner. Bru
 ## Innlevering
 
 * Det skal tas opp en video av forsøket (eller forsøkene)
-* Skrive rapport...
-* Programkode...
+* Det skal lages en nettside som viser forsøket og resultatet av simuleringene
+* Nettsiden skal også inneholde en kort introduksjon til matematiske modeller og en vurdering av resultatene
+* Programkoden for simulering og visualisering skal gjøres tilgjengelig på nettsiden (valgfri lisens)
 
 ## Vurderingskriterier
 
-* xxx
-* yyy
-* zzz
+### Høy måloppnåelse
+
+todo...
+
+### Middels måloppnåelse
+
+todo...
+
+### Lav måloppnåelse
+
+todo...
 
 ## Kompetansemål
 
@@ -53,13 +62,14 @@ Prosjektet dekker følgende [kompetansemål fra læreplanen i faget](https://git
 
 ### Matematiske metoder
 
+* lage programskisser og algoritmer med utgangspunkt i et matematisk problem
 * bruke og utlede numeriske metoder for å derivere og integrere funksjoner
 * bruke og utlede numeriske metoder til å løse differensiallikninger
-
 
 ### Modellering
 
 * utforme matematiske modeller med utgangspunkt i praktiske problemstillinger og vurdere modellene
+* gjøre rede for modellbegrepet og drøfte ulemper og fordeler ved noen modeller
 * sammenligne resultater fra simuleringer med eksperimentelle data
 * planlegge, utføre, drøfte og presentere et selvstendig arbeid knyttet til modellering
 
