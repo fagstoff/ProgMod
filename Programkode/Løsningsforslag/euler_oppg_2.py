@@ -1,5 +1,5 @@
 '''
-Løsningsforslag til oppgave 2 på denne siden: 
+Løsningsforslag med bruk av eulers metode til oppgave 2 på denne siden: 
 https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb 
 Lisens: Creative Commons BY-SA bitjungle (Rune Mathisen) 2018
 '''
@@ -46,10 +46,11 @@ for xn in xe:
 xe.append(xe[-1] + dx)
 
 # Utskrift av data
-plt.grid() # Lager rutenett
-plt.xlabel('$t$') # Merker x-aksen
-plt.ylabel('$A(t)$') # Merker y-aksen
-plt.plot(x, y, label='$f(x)$')
-plt.plot(xe, ye, label='Euler med $\Delta x={}$'.format(dx))
+plt.grid(True)
+plt.title("$\\frac{dy}{dx}=x + 2y$", fontsize=16)
+plt.xlabel('x',fontsize=12)
+plt.ylabel('y(x)',fontsize=12)
+plt.plot(x,y, label='Eksakt')
+plt.plot(xe,ye, label='Euler, $\\Delta x = {}$'.format(dx))
 plt.legend()
 plt.show()
