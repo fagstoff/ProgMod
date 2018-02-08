@@ -17,26 +17,27 @@
 | 46 | Repetisjon grunnleggende programmering||
 | 47 | [Plotting](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/matplotlib.ipynb)||
 | 48 | Repetisjon grunnleggende programmering||
-| 49 | [Forberedelse til fagdag - Tankmodell 1](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_1.ipynb)||
-| 50 | [Forberedelse til fagdag - Tankmodell 2](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_2.ipynb)|[Fagdag 3 - HSN](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_3.md)|
+| 49 | [Tankmodell 1](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_1.ipynb)||
+| 50 | [Tankmodell 2](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_2.ipynb)|[Fagdag 3 - HSN](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_3.md)|
 | 51 | [Vektorregning](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/vektorregning.ipynb)||
 | 1 | [Modellbegrepet](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/modellbegrepet.ipynb)|
 | 2 | Prøve ||
-| 3 | Gjennomgang av prøve - Repetisjon ||
+| 3 | Gjennomgang av prøve ||
 | 4 | [Euler](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb)||
 | 5 | [Repetisjon tankmodell 2](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_2.ipynb)||
 | 6 | [Tankmodell 3](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_3.ipynb)||
 | 7 | [Tankmodell 4](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_4.ipynb)||
 | 8 | Vinterferie ||
-| 10 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb) ||
-| 11 |[Fagdag 4 - Grimstad](http://www.uia.no)|Må bekreftes|
-| 12 |Praktisk prosjektoppgave||
+| 9 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb) ||
+| 10 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
+| 11 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)|[Fagdag 4 - Grimstad](http://www.uia.no)|
+| 12 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
 | 13 |Påskeferie||
-| 14 |Praktisk prosjektoppgave||
-| 15 |Praktisk prosjektoppgave||
-| 16 |Praktisk prosjektoppgave||
-| 17 |[Fagdag 5 - UiO](http://www.uio.no)|Må bekreftes|
-| 18 |||
+| 14 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
+| 15 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
+| 16 |Vurdering - Prosjektoppgave||
+| 17 |Vurdering - Prosjektoppgave|[Fagdag 5 - UiO](http://www.uio.no)|Må bekreftes|
+| 18 |Kompilatorer og koding||
 | 19 |||
 | 20 |||
 | 21 |[Fagdag 6 - Prosjekt]()|Ikke fastlagt ennå|
