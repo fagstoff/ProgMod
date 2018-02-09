@@ -1,38 +1,43 @@
 '''
-Løsningsforslag til oppgave 3 på denne siden: 
-https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb 
+Løsningsforslag med bruk av eulers metode til oppgave 3 på denne siden: 
+https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb
+Se også videoforklaring av dette eksempelet på: https://www.youtube.com/watch?v=NjPjO86NX7o&t=934s
 Lisens: Creative Commons BY-SA fuzzbin (Tom Jarle Christiansen) 2018
 '''
 
-# Importerer biblioteker
-import matplotlib.pyplot as plt 
-import numpy as np 
+# Import av nødvendige biblioteker
+import matplotlib.pyplot as plt
+import numpy as np
 
 # Initialbetingelser
-v0 = 0 # Startfart
-dt = 0.1 # Tidsskritt
-max_t = 20 # Hvor langt skal vi beregne
+v0 = 0 # slippfart
+dt = 0.01 # Tidsskritt
+max_t = 10 # Hvor mange sekunder programmet skal beregne
 
-k = 0.47 # Luftmotstandskoeffisient
-m = 60 # Massen til klossen
-g = 9.81 # Tyngdens akselerasjon
+k = 1 # Luftmotstandskoeffisient i L = k*v^2
+m = 60 # Massen til objektet
+g = 9.81 # Tngdens akselerasjon
 
-# Euler
-def neste_v(t, vn):
-    return vn + t * ( g - (k/m) * vn**2 )
+# Eulers metode beregner neste verdi
+def neste_v(dt, vn):
+    return vn + dt * ( g - (k/m) * vn**2 )
 
-# Lister
-x = np.arange(0, max_t, dt).tolist()
-y = [v0]
+# Initierer lister der verdiene t og v lagres
+t = np.arange(0, max_t, dt).tolist() # Fyller listen med t-verdier
+v = [v0]
 
-# Beregner resten av y-verdiene ved hjelp av Euler
-for i in x:
-    y.append(neste_v(dt, y[-1]))
+# Generer y-verdier utifra listen med tidspunkt
+for i in t:
+    v.append(neste_v(dt, v[-1]))
 
-x.append(x[-1] + dt) # Legger til siste verdi i y-lista.
+t.append(t[-1] + dt) # Legger til siste t-verdi for å få like lange lister
 
-plt.plot(x, y)
-plt.xlabel('$t [s]$') # Merker x-aksen
-plt.ylabel('$v(t) [m/s]$') # Merker y-aksen
+
+# Utskrift til skjerm
 plt.grid()
+plt.title("Fall med luftmotstand")
+plt.xlabel('Tid [s]', fontsize=12)
+plt.ylabel('Fart [m/s]', fontsize=12)
+plt.plot(t,v, label='Euler, $\\Delta t = {}$ s'.format(dt))
+plt.legend()
 plt.show()
