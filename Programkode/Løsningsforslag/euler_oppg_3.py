@@ -1,8 +1,7 @@
 '''
 Løsningsforslag med bruk av eulers metode til oppgave 3 på denne siden: 
 https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb
-Se også videoforklaring av dette eksempelet på: https://www.youtube.com/watch?v=NjPjO86NX7o&t=934s
-Lisens: Creative Commons BY-SA fuzzbin (Tom Jarle Christiansen) 2018
+Se også videoforklaring av dette eksempelet: https://www.youtube.com/watch?v=NjPjO86NX7o
 '''
 
 # Import av nødvendige biblioteker
