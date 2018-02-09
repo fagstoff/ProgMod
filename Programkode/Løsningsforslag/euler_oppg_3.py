@@ -2,6 +2,7 @@
 Løsningsforslag med bruk av eulers metode til oppgave 3 på denne siden: 
 https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/euler.ipynb
 Se også videoforklaring av dette eksempelet: https://www.youtube.com/watch?v=NjPjO86NX7o
+Lisens: Creative Commons BY-SA fuzzbin (Tom Jarle Christiansen) 2018
 '''
 
 # Import av nødvendige biblioteker
@@ -30,7 +31,6 @@ for i in t:
     v.append(neste_v(dt, v[-1]))
 
 t.append(t[-1] + dt) # Legger til siste t-verdi for å få like lange lister
-
 
 # Utskrift til skjerm
 plt.grid()
