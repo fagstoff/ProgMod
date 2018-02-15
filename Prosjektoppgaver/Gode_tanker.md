@@ -1,6 +1,6 @@
 # Gode tanker
 
-__INGRESS TODO__
+**I denne prosjektoppgaven skal du lage modeller, kjøre simuleringer og bygge et fysisk system. Oppgaven dekker store deler av kompetansemålene i faget [Programmering og modellering X](https://github.com/fagstoff/ProgMod/blob/master/Læreplan/kompetansemål.md). For å løse oppgaven må du ha god kjennskap til bruk av differensiallikninger og numerisk løsning av disse, og du må kunne grunnleggende programmering. Prosjektet bør gjennomføres som en gruppeoppgave.**
 
 ## Oppgave
 
@@ -40,7 +40,11 @@ Bygg et fysisk system av to tanker som oppfyller noen gitte spesifikasjoner. Bru
 
 ### Høy måloppnåelse
 
-todo...
+* Det ferdige systemet fyller alle kravene som er gitt i spesifikasjonen
+* Simuleringen gir en god tilnærming til hvordan det ferdige systemet oppfører seg
+* Simuleringsprogrammet er strukturert og ryddig, med teknisk gode løsninger og god dokumentasjon
+* Det kommer tydelig fram i rapporten hvilke forenklinger og antakelser som er gjort i modellen
+* +++
 
 ### Middels måloppnåelse
 
