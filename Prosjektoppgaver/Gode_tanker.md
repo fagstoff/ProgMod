@@ -24,11 +24,6 @@ Bygg et fysisk system av to tanker som oppfyller noen gitte spesifikasjoner. Bru
 * Ta utgangspunkt i fagteksten [Tankmodell - To tanker](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb)
 * Som et utgangspunkt for faktoren C kan du bruke verdien [0.61](https://www.usbr.gov/tsc/techreferences/mands/wmm/chap09_05.html)
 
-## Tips
-
-* Husk at tverrsnittet av utløpet må være __mye__ mindre enn tverrsnittet i tanken for at Bernoullis likning skal gjelde
-* Vær nøye med enheter
-
 ## Innlevering
 
 * Det skal tas opp en video av forsøket (eller forsøkene)
