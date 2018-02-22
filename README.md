@@ -10,6 +10,8 @@ Programeksempler for faget er implementert i [Python](https://www.python.org/), 
 
 I mappa [Prosjektoppgaver](https://github.com/fagstoff/ProgMod/tree/master/Prosjektoppgaver) ligger det større oppgaver som egner seg til arbeid over lengre tid, og som kan brukes for vurdering i faget.
 
+Tidligere gitte prøver i faget finner du i mappa [Prøver](https://github.com/fagstoff/ProgMod/tree/master/Prøver).
+
 ## Slik kan du bidra
 
 Alle som ønsker inviteres til å bidra. Dette kan både gjøres ved å legge inn forslag, tips, feilmeldinger, ønsker eller andre kommentarer under [issues](https://github.com/fagstoff/ProgMod/issues).
