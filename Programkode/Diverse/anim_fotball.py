@@ -16,9 +16,9 @@ ball = pygame.image.load('anim_fotball.png')
 fieldrect = field.get_rect()
 ballrect = ball.get_rect()
 
-offset = [5, 5]
-
 screen = pygame.display.set_mode(fieldrect.size)
+
+offset = [5, 5]
 
 while True:
     for event in pygame.event.get():
