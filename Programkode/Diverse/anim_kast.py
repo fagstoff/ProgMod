@@ -19,14 +19,13 @@ def ball_til_startpunkt():
 
 
 # Definerer initialbetingelsene til modellen
-v0x = 15  # Fart i x-retning (m/s). Sett til 0 for vertikalt kast
+v0x = 15  # Fart i x-retning (m/s). Sett til 0 for vertikalt kast.
 v0y = 25  # Fart u y-retning (m/s).
 a = -9.81 # Akselerasjon nedover (m/s^2)
 
 teller = 0 # Holder styr på hvor langt i simuleringen vi har kommet.
 
-# Liste med x-verdier - tiden
-tx = np.arange(0, 6, 0.05)
+tx = np.arange(0, 6, 0.05) # Liste med x-verdier - tiden
 vy = [] # tom liste som skal inneholde fart som funksjon av tid
 
 # Genererer v-verdier verdier for alle tidspunkt t
