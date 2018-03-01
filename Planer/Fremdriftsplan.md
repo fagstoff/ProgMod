@@ -31,7 +31,7 @@
 | 9 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb) ||
 | 10 |[Repetisjon](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/)||
 | 11 |[Prøve i matematisk modellering]()|[Fagdag 4 - Grimstad](http://www.uia.no)|
-| 12 |[Animasjon med pygame](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjoner_med_pygame.ipynb)||
+| 12 |[Animasjon med pygame](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjoner_med_pygame.ipynb) - [Animasjon av modeller](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_modeller.ipynb) - [Animasjon av vanntank](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_vanntank.ipynb)||
 | 13 |Påskeferie||
 | 14 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
 | 15 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
