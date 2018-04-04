@@ -36,10 +36,10 @@
 | 14 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
 | 15 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
 | 16 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
-| 17 |Vurdering - Prosjektoppgave|[Fagdag 5 - UiO](http://www.uio.no)|Må bekreftes|
+| 17 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)|[Fagdag 5 - Prosjektpresentasjon]()|
 | 18 |Kompilatorer og koding||
 | 19 |Kompilatorer og koding||
 | 20 |Forberedelse til fagdag||
-| 21 |[Fagdag 6 - Prosjektpresentasjon]()|Ikke fastlagt ennå|
+| 21 |[Fagdag|[Fagdag 6 - UiO](http://www.uio.no)|
 | 22 |||
 | 23 |||
