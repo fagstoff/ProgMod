@@ -30,16 +30,16 @@
 | 8 | Vinterferie ||
 | 9 | [Tankmodell 5](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb) ||
 | 10 |[Repetisjon](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/)||
-| 11 |[Prøve i matematisk modellering]()|[Fagdag 4 - Grimstad](http://www.uia.no)|
+| 11 |[Prøve i matematisk modellering]()|[Fagdag 4 - UiA](http://www.uia.no)|
 | 12 |[Animasjon med pygame](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjoner_med_pygame.ipynb) - [Animasjon av modeller](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_modeller.ipynb) - [Animasjon av vanntank](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_vanntank.ipynb)||
 | 13 |Påskeferie||
 | 14 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
 | 15 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
 | 16 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)||
-| 17 |Vurdering - Prosjektoppgave|[Fagdag 5 - UiO](http://www.uio.no)|Må bekreftes|
+| 17 |[Praktisk prosjektoppgave](https://github.com/fagstoff/ProgMod/blob/master/Prosjektoppgaver/Gode_tanker.md)|[Fagdag 5 - Prosjektpresentasjon]()|
 | 18 |Kompilatorer og koding||
 | 19 |Kompilatorer og koding||
 | 20 |Forberedelse til fagdag||
-| 21 |[Fagdag 6 - Prosjektpresentasjon]()|Ikke fastlagt ennå|
+| 21 |[Fagdag|[Fagdag 6 - UiO](http://www.uio.no)|
 | 22 |||
 | 23 |||
