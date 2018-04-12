@@ -9,6 +9,7 @@ Bygg et fysisk system som består av to tanker som er fylt med vann. Bruk simule
 ## Ressurser
 
 * Ta utgangspunkt i fagteksten [Tankmodell - To tanker](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/tankmodell_5.ipynb)
+* Som et utgangspunkt for animasjon av vanntank kan du bruke fagteksten [Animasjon av nivået i en vanntank](https://github.com/fagstoff/ProgMod/blob/master/Fagstoff/animasjon_av_vanntank.ipynb)
 * Som et utgangspunkt for faktoren C kan du bruke verdien [0.61](https://www.usbr.gov/tsc/techreferences/mands/wmm/chap09_05.html)
 
 ## Innlevering
