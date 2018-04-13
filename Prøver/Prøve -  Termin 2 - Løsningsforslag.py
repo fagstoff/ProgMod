@@ -64,7 +64,8 @@ temp_hist = [NORMAL_BODY_TEMP]
 
 # Hovedløkka som kjører eulerberegningen og skriver ut kroppstemperatur for hver DELTA_T
 for i in t_hist:
-    temp_hist.append(euler(temp_hist[-1], stigning(temp_hist[-1], temp_omgivelse), DELTA_T)) # temp_hist[-1] henter siste verdi fra lista temp_hist. Dette er y_forrige.
+    # temp_hist[-1] henter siste verdi fra lista temp_hist. Dette er y_forrige.
+    temp_hist.append(euler(temp_hist[-1], stigning(temp_hist[-1], temp_omgivelse), DELTA_T)) 
     if i % 0.5 == 0:
         print('Tid: {} timer. Temperatur: {} grader celcius.'.format(i, "%.2f" % temp_hist[-1]))
 
