@@ -1,6 +1,13 @@
 '''
 Løsningsforslag med bruk av eulers metode til "Terminprøve 2 - Etterforskning".
 Lisens: Creative Commons BY-SA fuzzbin (Tom Jarle Christiansen) og bitjungle (Rune Mathisen) 2018
+
+Modellen er laget med utgangspunkt i Newtons avkjølingslov, se 
+https://en.wikipedia.org/wiki/Newton's_law_of_cooling 
+
+Modellen beskriver energiutvekslingen mellom et legeme og omgivelsene, hvor temperatur-
+differansen er "den drivende kraften". Proporsjonalitetskonstanten k = -0.29 er hentet 
+fra en eksamensoppgave i matematikk R2.
 '''
 
 # Importerer biblioteker
