@@ -3,8 +3,8 @@
 | Uke | Tema | Annet |
 |:---:|:----|:-----|
 | 34 | Velkommen til ProgMod | Klargjøring av programvare |
-| 35 | [Hallo Verden](https://github.com/fagstoff/python-intro/blob/master/Fagstoff/helloWorld.ipynb) | [Fagdag/Samling](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_1.md) |
-| 36 | [Variabler](https://github.com/fagstoff/python-intro/blob/master/Fagstoff/variabler.ipynb) ||
+| 35 | [Hallo Verden](https://github.com/fagstoff/python-intro/blob/master/Fagstoff/helloWorld.ipynb) ||
+| 36 | [Variabler](https://github.com/fagstoff/python-intro/blob/master/Fagstoff/variabler.ipynb) |[Fagdag/Samling](https://github.com/fagstoff/ProgMod/blob/master/Planer/Fagdag_1.md)|
 | 37 | [Kontrollstrukturer](https://github.com/fagstoff/python-intro/blob/master/Fagstoff/kontrollstrukturer.ipynb) ||
 | 38 | [Biblioteker og metoder](https://github.com/fagstoff/python-intro/blob/master/Fagstoff/biblioteker%20og%20metoder.ipynb) ||
 | 39 | [Funksjoner](https://github.com/fagstoff/python-intro/blob/master/Fagstoff/funksjoner.ipynb) ||
