@@ -4,7 +4,7 @@
 
 ## Oppgave
 
-I denne oppgaven skal det jobbes i grupper. Hver gruppe får utdelt en micro:bit. Målet med oppgaven er å logge data fra data fra sensorene som leser av akselerasjon i micro:biten og presentere disse.
+I denne oppgaven skal det jobbes i grupper. Hver gruppe får utdelt en micro:bit. Målet med oppgaven er å logge data fra data fra sensorene som leser av akselerasjon og presentere og bruke disse.
 
 ## Ressurser
 
