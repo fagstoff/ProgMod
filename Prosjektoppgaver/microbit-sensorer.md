@@ -15,7 +15,7 @@ I denne oppgaven skal det jobbes i grupper. Hver gruppe får utdelt en micro:bit
 ## Vurderingskriterier
 
 * Planlegg og gjennomfør et forsøk der det brukes sensordata fra en micro:bit.
-* Det skal leses av sensordata som lagres frea micro:bit.
+* Det skal leses av og lagres sensordata fra micro:bit'en.
 * De innsamlede dataene og relevant informasjon man kan utlede fra disse skal presenteres på en hensiktsmessig måte.
 
 ## Kompetansemål
