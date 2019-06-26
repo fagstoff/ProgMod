@@ -4,7 +4,7 @@
 
 Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke for å komme i mål.
 
-<img src="./img/stigespill_brett.jpg" alt="Spillebrett" width="800"/>
+<img src="./img/stigespill_brett.png" alt="Spillebrett" width="800"/>
 <img src="./img/stigespill_regler.jpg" alt="Spillebrett" width="800"/>
 
 ## Ressurser
