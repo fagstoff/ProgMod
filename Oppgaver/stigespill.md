@@ -11,7 +11,12 @@ Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke 
     <figcaption>Spillebrettet til stigepsillet. Bilde tatt av fuzzbin</figcaption>
 </figure>
 
-<img src="./img/stigespill_regler.png" alt="Spillebrett" width="600"/>
+<br>
+
+<figure>
+    <img src="./img/stigespill_regler.png" alt="Spillebrett" width="600"/>
+    <figcaption>Reglene til stigepsillet. Bilde tatt av fuzzbin</figcaption>
+</figure>
 
 + deloppgave 1
 + deloppgave 2
