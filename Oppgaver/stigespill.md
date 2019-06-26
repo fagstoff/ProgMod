@@ -24,4 +24,4 @@ Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke 
 
 ---
 
-_Denne oppgaven er laget av [fuzzbin](https://github.com/fuzzbin) etter en ide fra [Bitjungle](https://github.com/fuzzbin). og Henrik Kjønnerud på Greveskogen VGS. Oppgaven er lisensiert under en [Creative Commons Navngivelse-DelPåSammeVilkår 4.0 Internasjonal lisens.](http://creativecommons.org/licenses/by-sa/4.0/)_
+_Denne oppgaven er laget av [fuzzbin](https://github.com/fuzzbin) etter en ide fra [bitjungle](https://github.com/fuzzbin) og [Henrik Kjønnerud](henrikk@vfk.no). Oppgaven er lisensiert under en [Creative Commons Navngivelse-DelPåSammeVilkår 4.0 Internasjonal lisens.](http://creativecommons.org/licenses/by-sa/4.0/)_
