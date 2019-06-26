@@ -2,9 +2,6 @@
 
 Stigespill er en type brettspill. Målet er å komme seg fra et punkt til et annet på brettet, og rundt på brettet er det en rekke «stiger» (eller lignende - klassikerne er murerne som klatrer opp/faller ned fra stiger, eller en gutt og ei jente som klatrer opp/blir bitt og faller ned fra slanger) som fungerer som snarveier for spillbrikkene, eller en tilbakeføringsvei så man må gå et visst antall felter om igjen. En terning blir benyttet til å bedømme hvor raskt spillbrikkene beveger seg. (Tekst fra [Wikipedia](https://no.wikipedia.org/wiki/Stigespill))
 
-## Oppgave
-
-Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke for å komme i mål i dette spillet.
 
 <figure>
     <img src="./img/stigespill_brett.png" alt="Spillebrett" width="800"/>
@@ -17,6 +14,10 @@ Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke 
     <img src="./img/stigespill_regler.png" alt="Spillebrett" width="600"/>
     <figcaption>Reglene til stigepsillet. Bilde tatt av fuzzbin</figcaption>
 </figure>
+
+## Oppgave
+
+Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke for å komme i mål i dette spillet.
 
 + deloppgave 1
 + deloppgave 2
