@@ -7,6 +7,10 @@ Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke 
 <img src="./img/stigespill_brett.png" alt="Spillebrett" width="800"/>
 <img src="./img/stigespill_regler.png" alt="Spillebrett" width="600"/>
 
++ deloppgave 1
++ deloppgave 2
++ osv...
+
 ## Ressurser
 
 * Du trenger en kodeeditor og Python til denne oppgaven.
