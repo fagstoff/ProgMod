@@ -2,7 +2,7 @@
 
 ## Oppgave
 
-Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke for å komme i mål.
+Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke for å komme i mål i dette spillet.
 
 <img src="./img/stigespill_brett.png" alt="Spillebrett" width="800"/>
 <img src="./img/stigespill_regler.png" alt="Spillebrett" width="800"/>
@@ -14,7 +14,9 @@ Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke 
 ## Vurderingskriterier
 
 * Programmet skal kjøre uten feil og advarsler.
-* Programmet skal skrive ut gjennomsnitlig antall kast man må bruke for å fullføre spillet.
+* Programmet skal følge reglene for spillet.
+* Programmet skal skrive ut gjennomsnitlig antall kast man må bruke for å fullføre spillet. Det skal også skrives ut hvor mange simuleringer som er kjørt.
+* Programmet skal be brukeren om å angi antall simuleringer.
 * Det skal komme klart frem av programkode og kommentarer hvordan du har løst problemet.
 
 ## Kompetansemål
