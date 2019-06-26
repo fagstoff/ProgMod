@@ -6,7 +6,11 @@ Stigespill er en type brettspill. Målet er å komme seg fra et punkt til et ann
 
 Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke for å komme i mål i dette spillet.
 
-<img src="./img/stigespill_brett.png" alt="Spillebrett" width="800"/>
+<figure>
+    <img src="./img/stigespill_brett.png" alt="Spillebrett" width="800"/>
+    <figcaption>Spillebrettet til stigepsillet. Bilde tatt av fuzzbin</figcaption>
+</figure>
+
 <img src="./img/stigespill_regler.png" alt="Spillebrett" width="600"/>
 
 + deloppgave 1
