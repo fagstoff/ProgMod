@@ -40,7 +40,7 @@ Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke 
 
 ## Annet
 
-Hvis du syntes denne oppgavene var spennende, og vil lese mer om matematikken bak dette spillet anbefales kan du lese mer [her](http://www.datagenetics.com/blog/november12011/).
+Hvis du syntes denne oppgavene var spennende, og vil lese mer om matematikken bak dette spillet kan du lese på bloggen og nettstedet [Datagenetics](http://www.datagenetics.com/blog/november12011/).
 
 
 ---
