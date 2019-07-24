@@ -1,24 +1,24 @@
 # Stigespillet
 
-Stigespill er en type brettspill. Målet er å komme seg fra et punkt til et annet på brettet, og rundt på brettet er det en rekke «stiger» (eller lignende - klassikerne er murerne som klatrer opp/faller ned fra stiger, eller en gutt og ei jente som klatrer opp/blir bitt og faller ned fra slanger) som fungerer som snarveier for spillbrikkene, eller en tilbakeføringsvei så man må gå et visst antall felter om igjen. En terning blir benyttet til å bedømme hvor raskt spillbrikkene beveger seg. (Tekst fra [Wikipedia](https://no.wikipedia.org/wiki/Stigespill))
+Stigespill er et brettspill hvor målet er å komme seg fra starten til slutten av brettet med færrest mulig terningkast. Rundt på brettet er det en rekke «stiger» som fungerer som snarveier for spillbrikkene, eller en tilbakeføringsvei så man må gå et visst antall felter om igjen. 
 
 ## Spillebrett og regler
 
 <figure>
     <img src="./img/stigespill_brett.png" alt="Spillebrett" width="600"/>
-    <figcaption>Spillebrettet til stigepsillet. Bilde tatt av <a href="https://github.com/fuzzbin">fuzzbin</a></figcaption>
+    <figcaption>Spillebrettet til stigespillet. Bilde tatt av <a href="https://github.com/fuzzbin">fuzzbin</a></figcaption>
 </figure>
 
 <br>
 
 <figure>
     <img src="./img/stigespill_regler.png" alt="Spillebrett" width="400"/>
-    <figcaption>Reglene til stigepsillet. Bilde tatt av <a href="https://github.com/fuzzbin">fuzzbin</a></figcaption>
+    <figcaption>Reglene til stigespillet. Bilde tatt av <a href="https://github.com/fuzzbin">fuzzbin</a></figcaption>
 </figure>
 
 ## Oppgave
 
-Lag et program som beregner hvor mange terningkast man i gjennomsnitt må bruke for å komme i mål i dette spillet. Vis fordelingen av terningkastene grafisk.
+Lag en simulator av stigespillet som er vist i bildet ovenfor, og kjør simuleringer for å finne ut hvor mange terningkast vi i gjennomsnitt må bruke for å komme i mål i dette spillet. Vis fordelingen av terningkastene grafisk. Vurder hvor mange simuleringer som er nødvendig å kjøre for å gi sikre estimater for gjennomsnittlig antall kast for å komme i mål.
 
 ## Ressurser
 
