@@ -15,7 +15,7 @@ Du skal lage et program som simulerer terningkast. Start med å gjøre 60 simule
 
 * Programmet skal kjøre uten feil og advarsler.
 * Programmet skal følge reglene for spillet.
-* Programmet skal skrive ut gjennomsnitlig antall kast man må bruke for å fullføre spillet. Det skal også skrives ut hvor mange simuleringer som er kjørt.
+* Programmet skal skrive ut gjennomsnittlig antall kast man må bruke for å fullføre spillet. Det skal også skrives ut hvor mange simuleringer som er kjørt.
 * Programmet skal be brukeren om å angi antall simuleringer.
 * Det skal komme klart frem av programkode og kommentarer hvordan du har løst problemet.
 
