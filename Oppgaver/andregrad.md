@@ -5,7 +5,7 @@
 En andregradslikning på formen:
 
 <figure>
-    <img src="./img/andregrad.png" alt="Andregradsformel" width="70"/>
+    <img src="./img/andregrad.png" alt="Andregradsformel" width="200"/>
     <figcaption>ABC-formelen</figcaption>
 </figure>
 
