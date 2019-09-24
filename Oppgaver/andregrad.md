@@ -2,7 +2,14 @@
 
 ## Oppgave
 
-En andregradslikning på formen $ax^2+bx+c=0$ kan ha to, en eller ingen løsninger. Lag et program som ber brukeren om å taste inn faktorene a, b og c og så skriver ut løsningen(e) hvis de finnes. 
+En andregradslikning på formen:
+
+<figure>
+    <img src="./img/andregrad.png" alt="Andregradsformel" width="70"/>
+    <figcaption>ABC-formelen</figcaption>
+</figure>
+
+kan ha to, en eller ingen løsninger. Lag et program som ber brukeren om å taste inn faktorene a, b og c og så skriver ut løsningen(e) hvis de finnes. 
 
 ## Ressurser
 
