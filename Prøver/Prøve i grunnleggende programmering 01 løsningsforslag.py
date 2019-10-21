@@ -66,10 +66,11 @@ if __name__ == '__main__':
     result_txt = "Største volum er {} liter. Da er kanthøyden {} mm.".format(round(V_max, 2), h_max)
 
     # Utskrift av resultat
-    plt.grid() # Lager rutenett
-    plt.xlabel('Kanthøyde') # Merker x-aksen
-    plt.ylabel('Volum') # Merker y-aksen
-    plt.plot(x, y)
+    plt.grid()                   # Lager rutenett
+    plt.xlabel('Kanthøyde')      # Merker x-aksen
+    plt.ylabel('Volum')          # Merker y-aksen
+    plt.plot(x, y)               # Tegner grafen til funksjonen
+    plt.plot(h_max, V_max, 'rx') # Merker høyeste verdi
     plt.title(result_txt)
     plt.show()
     
