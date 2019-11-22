@@ -6,7 +6,7 @@ Lag et enkelt spill som kjører i et konsollvindu.
 
 ## Ressurser
 
-* Du trenger en kodeeditor og Python denne oppgaven.
+* Du trenger en kodeeditor og Python for å løse denne oppgaven.
 * Du kan bruke boka [Invent Your Own Computer Games with Python](http://inventwithpython.com/chapters/) for å finne spill-idèer og programkode.
 
 ## Vurderingskriterier
@@ -21,6 +21,7 @@ Hovedhensikten med dette prosjektet er at du viser at du behersker grunnleggende
 * Spilleren skal ha mulighet for å starte et nytt spill når det pågående spillet er ferdig ("Spille igjen (J/N)?")
 * For at programmet ditt skal kvalifisere som et spill, må utfallet være ukjent når programmet starter. Det må være slik at spilleren har mulighet til å påvirke utfallet.
 * Programkoden må inneholde relevante kommentarer, slik at andre kan sette seg inn i hva den aktuelle koden gjør.
+* Du må kunne forklare muntlig hva all koden i programmet ditt gjør.
 
 ## Kompetansemål
 

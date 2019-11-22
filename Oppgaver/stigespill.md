@@ -20,10 +20,6 @@ Stigespill er et brettspill hvor målet er å komme seg fra starten til slutten 
 
 Lag en simulator av stigespillet som er vist i bildet ovenfor, og kjør simuleringer for å finne ut hvor mange terningkast vi i gjennomsnitt må bruke for å komme i mål i dette spillet. Vis fordelingen av terningkastene grafisk. Vurder hvor mange simuleringer som er nødvendig å kjøre for å gi sikre estimater for gjennomsnittlig antall kast for å komme i mål.
 
-## Ressurser
-
-* Du trenger en kodeeditor og Python for å løse denne oppgaven.
-
 ## Vurderingskriterier
 
 * Programmet skal kjøre uten feil og advarsler.
