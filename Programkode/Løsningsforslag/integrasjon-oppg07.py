@@ -10,7 +10,7 @@ def midtsum(f, a, b, dx):
         msum += f(x + dx/2) * dx
     return msum
 
-t = np.arange(0, 360, 0.1)
+t = np.arange(0, 360.1, 0.1)
 fart = v(t)
 
 gj_fart = np.average(fart)
