@@ -36,7 +36,7 @@ Det skal lages og gjennomføres en presentasjon som dokumenterer hele prosjektet
 
 * Simuleringen gir en god tilnærming til hvordan det ferdige systemet oppfører seg
 * Simuleringsprogrammet er strukturert og ryddig, med god dokumentasjon
-* Det kommer tydelig fram i rapporten hvilke forenklinger og antakelser som er gjort i modellen
+* Det kommer tydelig fram i presentasjonen hvilke forenklinger og antakelser som er gjort i modellen
 * Det skal være mulig å reprodusere resultatene i en demonstrasjon
 * Resultatene blir formidlet på en ryddig og god måte
 * Elevene har referanser til kilder
